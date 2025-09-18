@@ -1,6 +1,6 @@
-Web portfolio de Carmen Moreno
-### Hecha con react + tailwindcssls
+# Web portfolio de Carmen Moreno
+## Creada con React + TypeScript + Tailwind CSS + Vite
 
-## https://carmenmo.com
+### https://carmenmo.com
 
-# carmenmo
+
