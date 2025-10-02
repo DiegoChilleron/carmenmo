@@ -1,0 +1,60 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Home",
+      "about": "Chi sono",
+      "projects": "Progetti",
+      "downloadCV": "Download CV",
+      "contact": "Contatto"
+    },
+    "hero": {
+      "title": "Designer grafica nata a Logroño",
+      "description": "Appassionata di branding e design editoriale. Con master in Direzione Artistica e Intelligenza Artificiale applicata al Design.",
+      "motto": "Crea. Connetti. Ripeti.",
+      "button": "Saperne di più"
+    },
+    "about": {
+      "title": "Chi sono:",
+      "infoTitle": "Informazioni generali",
+      "infoText": "Sono una designer grafica con un master in Direzione Artistica e un altro in Intelligenza Artificiale. Combino creatività e tecnologia per sviluppare identità visive che si connettono con le persone e potenziano i marchi. Quando non sto progettando, esploro nuove applicazioni creative dell'IA. Mi appassiona unire arte, design e tecnologia per guidare il futuro della comunicazione visiva. Se vuoi saperne di più, scarica il mio CV:",
+      "cvButton": "Scarica CV",
+      "experienceTitle": "Esperienza",
+      "experience1": {
+        "position": "DESIGNER GRAFICA",
+        "company": "NeuronUP SL",
+        "date": "Novembre 2024 / Attualmente",
+        "description": "Nel mio ruolo di designer nel dipartimento marketing, mi occupo di dare vita alla comunicazione dell'azienda attraverso tutti i canali. Disegno e modifico podcast e video, preparo materiali di vendita e sviluppo le risorse necessarie per eventi a livello mondiale. Inoltre, creo contenuti per i social media e campagne di acquisizione, assicurando che ogni pezzo rifletta l'identità e i valori dell'azienda."
+      },
+      "experience2": {
+        "position": "DESIGNER GRAFICA STAGISTA",
+        "company": "SmartBrand",
+        "date": "Luglio 2024 / Novembre 2024",
+        "description": "Durante il mio tirocinio, trasformavo i requisiti del team di marketing in contenuti visivi per diverse piattaforme di social media. Alcuni dei post che ho progettato hanno raggiunto fino a un milione di interazioni, riuscendo a connettersi efficacemente con il pubblico e rafforzare la presenza digitale del marchio."
+      },
+      "experience3": {
+        "position": "DESIGNER UX/UI",
+        "company": "Dewnir",
+        "date": "Luglio 2022 / Luglio 2023",
+        "description": "Progettavo esperienze digitali intuitive, dai wireframe e prototipi alle interfacce finali, garantendo usabilità e coerenza con l'identità del marchio. Collaboravo con gli sviluppatori per implementare soluzioni incentrate sull'utente."
+      }
+    },
+    "projects": {
+      "title": "Alcuni dei miei progetti",
+      "project1": "Memorie vive in terre deserte",
+      "project2": "Cienfuegos",
+      "project3": "Futura type fest",
+      "project4": "Fossil Fuel",
+      "project5": "Design Social Media",
+      "project6": "Design UX/UI"
+    },
+    "contact": {
+      "title": "Qualche idea per il tuo progetto",
+      "description": "Vuoi iniziare un nuovo progetto o semplicemente salutare? Inviami un'email e farò del mio meglio per rispondere entro 24 ore!",
+      "button": "Invia messaggio"
+    },
+    "footer": {
+      "madeWith": "Fatto con",
+      "by": "da"
+    }
+  }
+}

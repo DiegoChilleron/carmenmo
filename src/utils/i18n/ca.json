@@ -1,0 +1,60 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Inici",
+      "about": "Sobre mi",
+      "projects": "Projectes",
+      "downloadCV": "Download CV",
+      "contact": "Contacte"
+    },
+    "hero": {
+      "title": "Dissenyadora gràfica nascuda a Logronyo",
+      "description": "Apassionada pel branding i el disseny editorial. Amb màster en direcció d'Art i en Intel·ligència artificial aplicada al Disseny.",
+      "motto": "Crea. Connecta. Repeteix.",
+      "button": "Saber més"
+    },
+    "about": {
+      "title": "Sobre mi:",
+      "infoTitle": "Informació general",
+      "infoText": "Sóc dissenyadora gràfica amb un màster en Direcció d'Art i un altre en Intel·ligència Artificial. Combino creativitat i tecnologia per desenvolupar identitats visuals que connectin amb les persones i potenciïn marques. Quan no estic dissenyant, exploro noves aplicacions creatives de la IA. M'apassiona unir art, disseny i tecnologia per impulsar el futur de la comunicació visual. Si vols saber més, descarrega el meu CV:",
+      "cvButton": "Descarregar CV",
+      "experienceTitle": "Experiència",
+      "experience1": {
+        "position": "DISSENYADORA GRÀFICA",
+        "company": "NeuronUP SL",
+        "date": "Novembre del 2024 / Actualment",
+        "description": "En el meu rol com a dissenyadora al departament de màrqueting, m'encarrego de donar vida a la comunicació de l'empresa a través de tots els canals. Dissenyo i edito els podcasts i vídeos, preparo materials de venda i desenvolupo els recursos necessaris per a esdeveniments a nivell mundial. A més, creo continguts per a xarxes i campanyes de captació, assegurant que cada peça reflecteixi la identitat i els valors de l'empresa."
+      },
+      "experience2": {
+        "position": "DISSENYADORA GRÀFICA EN PRÀCTIQUES",
+        "company": "SmartBrand",
+        "date": "Juliol del 2024 / Novembre del 2024",
+        "description": "Durant les meves pràctiques, transformava els requeriments de l'equip de màrqueting en contingut visual per a diferents xarxes socials. Alguns dels posts que vaig dissenyar van aconseguir arribar fins a un milió d'interaccions, aconseguint connectar de manera efectiva amb l'audiència i reforçar la presència digital de la marca."
+      },
+      "experience3": {
+        "position": "DISSENYADORA UX/UI",
+        "company": "Dewnir",
+        "date": "Juliol 2022 / Juliol 2023",
+        "description": "Dissenyava experiències digitals intuïtives, des de wireframes i prototips fins a interfícies finals, assegurant usabilitat i coherència amb la identitat de la marca. Col·laborava amb desenvolupadors per implementar solucions centrades en l'usuari."
+      }
+    },
+    "projects": {
+      "title": "Alguns dels meus projectes",
+      "project1": "Memòries vives en terres desertes",
+      "project2": "Cienfuegos",
+      "project3": "Futura type fest",
+      "project4": "Fossil Fuel",
+      "project5": "Disseny XSXS",
+      "project6": "Disseny UX/UI"
+    },
+    "contact": {
+      "title": "Alguna idea per al teu projecte",
+      "description": "Vols començar un nou projecte o simplement saludar? Envia'm un correu i faré tot el possible per respondre en 24 hores!",
+      "button": "Enviar missatge"
+    },
+    "footer": {
+      "madeWith": "Fet amb",
+      "by": "per"
+    }
+  }
+}
