@@ -25,6 +25,20 @@ h1 {
 
 h2 {
     @apply text-center text-3xl md:text-4xl xl:text-5xl py-8 tracking-widest;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h2::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url('/src/assets/icons/starts_icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h3 {
@@ -49,7 +63,7 @@ p {
 
 /* Gradient Button - Shared styles */
 .button-gradient {
-    @apply px-8 py-3 rounded-full transition-all duration-200 font-medium;
+    @apply px-8 py-3 rounded-full transition-all duration-400 font-medium;
     font-family: 'Poppins', sans-serif;
     color: #000000;
     background: linear-gradient(to right, #7E88F8, #FBD19D);
@@ -62,6 +76,12 @@ p {
 }
 
 .button-gradient:hover {
+    background: linear-gradient(to right, #FBD19D, #7E88F8);
+    background-image: 
+        linear-gradient(to right, #FBD19D, #7E88F8),
+        linear-gradient(to right, #7E88F8, #FBD19D);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     transform: scale(1.05);
 }
 
@@ -74,7 +94,7 @@ section {
 /* Navbar */
 .navbar {
     @apply fixed top-0 left-0 right-0 z-50 shadow-sm w-full;
-    background-color: #1C1C1C !important;
+    background-color: #0F1111 !important;
 }
 
 .navbar__container {
@@ -102,10 +122,10 @@ section {
     padding-left: 3rem;
     padding-right: 3rem;
     gap: 3rem;
-    background-color: #1C1C1C !important;
+    background-color: #0F1111 !important;
     border: 2px solid transparent;
     background-image: 
-        linear-gradient(#1C1C1C, #1C1C1C),
+        linear-gradient(#0F1111, #0F1111),
         linear-gradient(to right, #7E88F8, #FBD19D);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -215,6 +235,34 @@ section {
     );
 }
 
+/* Nueva cuadrícula animada minimalista */
+.hero__grid-background {
+    @apply absolute inset-0 overflow-hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero__grid-line {
+    @apply absolute;
+    background: linear-gradient(
+        135deg,
+        rgba(126, 136, 248, 0.5) 0%,
+        rgba(251, 209, 157, 0.5) 100%
+    );
+}
+
+.hero__grid-line--vertical {
+    width: 1px;
+    height: 100%;
+    transform-origin: top;
+}
+
+.hero__grid-line--horizontal {
+    height: 1px;
+    width: 100%;
+    transform-origin: left;
+}
+
 .hero__container {
     @apply max-w-4xl mx-auto text-center;
     position: relative;
@@ -291,7 +339,7 @@ section {
 /* About Section */
 .about {
   @apply min-h-screen py-16 px-4;
-  background-color: #1C1C1C;
+  background-color: #0F1111;
 }
 
 .about__container {
@@ -308,11 +356,16 @@ section {
 }
 
 .about__section {
-  @apply mb-16;
+  @apply mb-16 border-l-1 border-gray-500;
 }
 
 .about__section--info {
-  margin-bottom: 6rem;
+
+    @apply pl-4 md:pl-20 mb-30;
+}
+
+.about__section--experience {
+  @apply ml-5 md:ml-30 pl-4 md:pl-20;
 }
 
 .about__section-icon {
@@ -407,7 +460,7 @@ section {
 /* Projects Section */
 .projects {
   @apply min-h-screen py-16 px-4;
-  background-color: #1C1C1C;
+  background-color: #0F1111;
 }
 
 .projects__container {
@@ -514,7 +567,7 @@ section {
 /* Contact Section */
 .contact {
   @apply min-h-screen py-16 px-4;
-  background-color: #1C1C1C;
+  background-color: #0F1111;
   position: relative;
   overflow: hidden;
 }
@@ -585,7 +638,7 @@ section {
 /* Footer */
 .footer {
     @apply w-full py-8;
-    background-color: #1C1C1C !important;
+    background-color: #0F1111 !important;
 }
 
 .footer__container {
@@ -608,10 +661,10 @@ section {
 /* Footer Social Media */
 .footer__social {
     @apply flex items-center space-x-8 rounded-full px-8 py-2;
-    background-color: #1C1C1C !important;
+    background-color: #0F1111 !important;
     border: 2px solid transparent;
     background-image: 
-        linear-gradient(#1C1C1C, #1C1C1C),
+        linear-gradient(#0F1111, #0F1111),
         linear-gradient(to right, #7E88F8, #FBD19D);
     background-origin: border-box;
     background-clip: padding-box, border-box;

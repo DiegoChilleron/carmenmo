@@ -67,7 +67,7 @@ export const About = () => {
         </div>
         
         {/* Experiencia */}
-        <div className="about__section">
+        <div className="about__section about__section--experience">
           <img src={starIcon} alt="star" className="about__section-icon" />
           <h3 className="about__section-title">{t('about.experienceTitle')}</h3>
           <div className="about__cards">

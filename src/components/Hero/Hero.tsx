@@ -15,27 +15,54 @@ export const Hero = () => {
   // Duplicamos el array para crear un loop infinito sin cortes
   const duplicatedTools = [...tools, ...tools, ...tools,...tools, ...tools, ...tools];
 
-  // Crear grid de rectangulos animados
-  const gridItems = Array.from({ length: 20 }, (_, i) => i);
+  // Líneas verticales - posiciones en porcentaje
+  const verticalLines = [10, 25, 40, 55, 70, 85];
+  
+  // Líneas horizontales - posiciones en porcentaje
+  const horizontalLines = [15, 35, 55, 75];
 
   return (
     <section className="hero">
-      {/* Animated background grid */}
-      <div className="hero__background-grid">
-        {gridItems.map((index) => (
+      {/* Animated grid background */}
+      <div className="hero__grid-background">
+        {/* Líneas verticales */}
+        {verticalLines.map((position, index) => (
           <motion.div
-            key={index}
-            className="hero__grid-item"
-            animate={{
-              x: [0, Math.random() * 100 - 50, 0],
-              y: [0, Math.random() * 100 - 50, 0],
+            key={`v-${index}`}
+            className="hero__grid-line hero__grid-line--vertical"
+            style={{ left: `${position}%` }}
+            initial={{ opacity: 0, scaleY: 0 }}
+            animate={{ 
+              opacity: [0.2, 0.5, 0.2],
+              scaleY: [0, 1, 0.8, 1],
             }}
             transition={{
-              duration: 10 + Math.random() * 10,
+              duration: 4 + index * 0.5,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "easeInOut",
-              delay: Math.random() * 5,
+              delay: index * 0.3,
+            }}
+          />
+        ))}
+        
+        {/* Líneas horizontales */}
+        {horizontalLines.map((position, index) => (
+          <motion.div
+            key={`h-${index}`}
+            className="hero__grid-line hero__grid-line--horizontal"
+            style={{ top: `${position}%` }}
+            initial={{ opacity: 0, scaleX: 0 }}
+            animate={{ 
+              opacity: [0.2, 0.5, 0.2],
+              scaleX: [0, 1, 0.8, 1],
+            }}
+            transition={{
+              duration: 4 + index * 0.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+              delay: index * 0.4,
             }}
           />
         ))}
