@@ -1,0 +1,60 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Startseite",
+      "about": "Über mich",
+      "projects": "Projekte",
+      "downloadCV": "Lebenslauf herunterladen",
+      "contact": "Kontakt"
+    },
+    "hero": {
+      "title": "Grafikdesignerin geboren in Logroño",
+      "description": "Leidenschaftlich für Branding und Editorial Design. Mit einem Master in Art Direction und Künstlicher Intelligenz angewendet auf Design.",
+      "motto": "Erschaffen. Verbinden. Wiederholen.",
+      "button": "Mehr erfahren"
+    },
+    "about": {
+      "title": "Über mich:",
+      "infoTitle": "Allgemeine Informationen",
+      "infoText": "Ich bin Grafikdesignerin mit einem Master in Art Direction und einem weiteren in Künstlicher Intelligenz. Ich verbinde Kreativität und Technologie, um visuelle Identitäten zu entwickeln, die mit Menschen in Verbindung treten und Marken stärken. Wenn ich nicht entwerfe, erkunde ich neue kreative Anwendungen der KI. Ich bin leidenschaftlich daran interessiert, Kunst, Design und Technologie zu vereinen, um die Zukunft der visuellen Kommunikation voranzutreiben. Wenn Sie mehr wissen möchten, laden Sie meinen Lebenslauf herunter:",
+      "cvButton": "Lebenslauf herunterladen",
+      "experienceTitle": "Erfahrung",
+      "experience1": {
+        "position": "GRAFIKDESIGNERIN",
+        "company": "NeuronUP SL",
+        "date": "November 2024 / Derzeit",
+        "description": "In meiner Rolle als Designerin in der Marketingabteilung bin ich dafür verantwortlich, die Kommunikation des Unternehmens über alle Kanäle zum Leben zu erwecken. Ich gestalte und bearbeite Podcasts und Videos, bereite Verkaufsmaterialien vor und entwickle die notwendigen Ressourcen für weltweite Veranstaltungen. Darüber hinaus erstelle ich Inhalte für soziale Netzwerke und Akquisitionskampagnen und stelle sicher, dass jedes Stück die Identität und Werte des Unternehmens widerspiegelt."
+      },
+      "experience2": {
+        "position": "GRAFIKDESIGNERIN PRAKTIKANTIN",
+        "company": "SmartBrand",
+        "date": "Juli 2024 / November 2024",
+        "description": "Während meines Praktikums verwandelte ich die Anforderungen des Marketing-Teams in visuellen Inhalt für verschiedene soziale Netzwerke. Einige der Posts, die ich gestaltet habe, erreichten bis zu einer Million Interaktionen und verbanden sich effektiv mit dem Publikum und stärkten die digitale Präsenz der Marke."
+      },
+      "experience3": {
+        "position": "UX/UI DESIGNERIN",
+        "company": "Dewnir",
+        "date": "Juli 2022 / Juli 2023",
+        "description": "Ich entwarf intuitive digitale Erlebnisse, von Wireframes und Prototypen bis zu finalen Interfaces, wobei ich Benutzerfreundlichkeit und Konsistenz mit der Markenidentität sicherstellte. Ich arbeitete mit Entwicklern zusammen, um benutzerzentrierte Lösungen umzusetzen."
+      }
+    },
+    "projects": {
+      "title": "Einige meiner Projekte",
+      "project1": "Editorial",
+      "project2": "Cienfuegos",
+      "project3": "Futura type fest",
+      "project4": "Fossil Fuel",
+      "project5": "Social Media Design",
+      "project6": "UX/UI Design"
+    },
+    "contact": {
+      "title": "Eine Idee für Ihr Projekt",
+      "description": "Möchten Sie ein neues Projekt starten oder einfach Hallo sagen? Senden Sie mir eine E-Mail und ich werde mein Bestes tun, um innerhalb von 24 Stunden zu antworten!",
+      "button": "Nachricht senden"
+    },
+    "footer": {
+      "madeWith": "Gemacht mit",
+      "by": "von"
+    }
+  }
+}

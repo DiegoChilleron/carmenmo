@@ -15,6 +15,26 @@ import festivalTipografico1 from '../../assets/photos/proyects/FestivalTipografi
 import festivalTipografico2 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-2.webp';
 import festivalTipografico3 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-3.webp';
 
+// Importar imágenes de Editorial
+import editorialPortada from '../../assets/photos/proyects/Editorial/Editorial-portada.webp';
+import editorial1 from '../../assets/photos/proyects/Editorial/Editorial-1.webp';
+import editorial2 from '../../assets/photos/proyects/Editorial/Editorial-2.webp';
+import editorial3 from '../../assets/photos/proyects/Editorial/Editorial-3.webp';
+import editorial4 from '../../assets/photos/proyects/Editorial/Editorial-4.webp';
+import editorial5 from '../../assets/photos/proyects/Editorial/Editorial-5.webp';
+import editorial6 from '../../assets/photos/proyects/Editorial/Editorial-6.webp';
+import editorial7 from '../../assets/photos/proyects/Editorial/Editorial-7.webp';
+import editorial8 from '../../assets/photos/proyects/Editorial/Editorial-8.webp';
+import editorial9 from '../../assets/photos/proyects/Editorial/Editorial-9.webp';
+import editorial10 from '../../assets/photos/proyects/Editorial/Editorial-10.webp';
+import editorial11 from '../../assets/photos/proyects/Editorial/Editorial-11.webp';
+import editorial12 from '../../assets/photos/proyects/Editorial/Editorial-12.webp';
+import editorial13 from '../../assets/photos/proyects/Editorial/Editorial-13.webp';
+import editorial14 from '../../assets/photos/proyects/Editorial/Editorial-14.webp';
+import editorial15 from '../../assets/photos/proyects/Editorial/Editorial-15.webp';
+import editorial16 from '../../assets/photos/proyects/Editorial/Editorial-16.webp';
+import editorial17 from '../../assets/photos/proyects/Editorial/Editorial-17.webp';
+
 interface ProjectCardProps {
   number: number;
   name: string;
@@ -43,6 +63,7 @@ const ProjectCard = ({ number, name, image, onClick, index }: ProjectCardProps) 
           src={image} 
           alt={name} 
           className="projects__card-image"
+          loading="lazy"
         />
       </div>
       <div className="projects__card-info">
@@ -65,8 +86,26 @@ export const Projects = () => {
     {
       number: 1,
       name: t('projects.project1'),
-      image: '/path/to/image1.jpg', // Placeholder - añadir ruta real
-      images: []
+      image: editorialPortada,
+      images: [
+        editorial1,
+        editorial2,
+        editorial3,
+        editorial4,
+        editorial5,
+        editorial6,
+        editorial7,
+        editorial8,
+        editorial9,
+        editorial10,
+        editorial11,
+        editorial12,
+        editorial13,
+        editorial14,
+        editorial15,
+        editorial16,
+        editorial17
+      ]
     },
     {
       number: 2,

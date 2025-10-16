@@ -6,6 +6,11 @@ import esLang from './es.json';
 import enLang from './en.json';
 import caLang from './ca.json';
 import itLang from './it.json';
+import ptLang from './pt.json';
+import frLang from './fr.json';
+import deLang from './de.json';
+import ruLang from './ru.json';
+import zhLang from './zh.json';
 
 
 i18n
@@ -22,6 +27,11 @@ i18n
             en: enLang,
             ca: caLang,
             it: itLang,
+            pt: ptLang,
+            fr: frLang,
+            de: deLang,
+            ru: ruLang,
+            zh: zhLang,
         }
     });
 

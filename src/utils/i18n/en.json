@@ -2,7 +2,7 @@
   "translation": {
     "navbar": {
       "home": "Home",
-      "about": "About me",
+      "about": "About",
       "projects": "Projects",
       "downloadCV": "Download CV",
       "contact": "Contact"
@@ -16,31 +16,31 @@
     "about": {
       "title": "About me:",
       "infoTitle": "General information",
-      "infoText": "I'm a graphic designer with a master's degree in Art Direction and another in Artificial Intelligence. I combine creativity and technology to develop visual identities that connect with people and strengthen brands. When I'm not designing, I explore new creative applications of AI. I'm passionate about uniting art, design and technology to drive the future of visual communication. If you want to know more, download my CV:",
+      "infoText": "I am a graphic designer with a master's degree in Art Direction and another in Artificial Intelligence. I combine creativity and technology to develop visual identities that connect with people and empower brands. When I'm not designing, I explore new creative applications of AI. I'm passionate about bringing together art, design and technology to drive the future of visual communication. If you want to know more, download my CV:",
       "cvButton": "Download CV",
       "experienceTitle": "Experience",
       "experience1": {
         "position": "GRAPHIC DESIGNER",
         "company": "NeuronUP SL",
         "date": "November 2024 / Currently",
-        "description": "In my role as designer in the marketing department, I am responsible for bringing the company's communication to life across all channels. I design and edit podcasts and videos, prepare sales materials, and develop the necessary resources for worldwide events. Additionally, I create content for social media and lead generation campaigns, ensuring that each piece reflects the company's identity and values."
+        "description": "In my role as a designer in the marketing department, I am responsible for bringing the company's communication to life across all channels. I design and edit podcasts and videos, prepare sales materials and develop the necessary resources for worldwide events. Additionally, I create content for social networks and acquisition campaigns, ensuring that each piece reflects the company's identity and values."
       },
       "experience2": {
         "position": "GRAPHIC DESIGNER INTERN",
         "company": "SmartBrand",
         "date": "July 2024 / November 2024",
-        "description": "During my internship, I transformed the marketing team's requirements into visual content for different social media platforms. Some of the posts I designed achieved up to one million interactions, effectively connecting with the audience and reinforcing the brand's digital presence."
+        "description": "During my internship, I transformed the marketing team's requirements into visual content for different social networks. Some of the posts I designed managed to reach up to one million interactions, effectively connecting with the audience and strengthening the brand's digital presence."
       },
       "experience3": {
         "position": "UX/UI DESIGNER",
         "company": "Dewnir",
         "date": "July 2022 / July 2023",
-        "description": "I designed intuitive digital experiences, from wireframes and prototypes to final interfaces, ensuring usability and consistency with the brand identity. I collaborated with developers to implement user-centered solutions."
+        "description": "I designed intuitive digital experiences, from wireframes and prototypes to final interfaces, ensuring usability and consistency with brand identity. I collaborated with developers to implement user-centered solutions."
       }
     },
     "projects": {
       "title": "Some of my projects",
-      "project1": "Living memories in desert lands",
+      "project1": "Editorial",
       "project2": "Cienfuegos",
       "project3": "Futura type fest",
       "project4": "Fossil Fuel",
@@ -48,7 +48,7 @@
       "project6": "UX/UI Design"
     },
     "contact": {
-      "title": "Any ideas for your project",
+      "title": "Got an idea for your project",
       "description": "Want to start a new project or just say hello? Send me an email and I'll do my best to respond within 24 hours!",
       "button": "Send message"
     },

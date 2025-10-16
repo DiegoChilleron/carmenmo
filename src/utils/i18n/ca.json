@@ -4,7 +4,7 @@
       "home": "Inici",
       "about": "Sobre mi",
       "projects": "Projectes",
-      "downloadCV": "Download CV",
+      "downloadCV": "Descarregar CV",
       "contact": "Contacte"
     },
     "hero": {
@@ -23,7 +23,7 @@
         "position": "DISSENYADORA GRÀFICA",
         "company": "NeuronUP SL",
         "date": "Novembre del 2024 / Actualment",
-        "description": "En el meu rol com a dissenyadora al departament de màrqueting, m'encarrego de donar vida a la comunicació de l'empresa a través de tots els canals. Dissenyo i edito els podcasts i vídeos, preparo materials de venda i desenvolupo els recursos necessaris per a esdeveniments a nivell mundial. A més, creo continguts per a xarxes i campanyes de captació, assegurant que cada peça reflecteixi la identitat i els valors de l'empresa."
+        "description": "En el meu rol com a dissenyadora en el departament de màrqueting, m'encarrego de donar vida a la comunicació de l'empresa a través de tots els canals. Disseny i edito els podcasts i vídeos, preparo materials de venda i desenvolupo els recursos necessaris per a esdeveniments a nivell mundial. A més, creo continguts per a xarxes i campanyes de captació, assegurant que cada peça reflecteixi la identitat i els valors de l'empresa."
       },
       "experience2": {
         "position": "DISSENYADORA GRÀFICA EN PRÀCTIQUES",
@@ -40,7 +40,7 @@
     },
     "projects": {
       "title": "Alguns dels meus projectes",
-      "project1": "Memòries vives en terres desertes",
+      "project1": "Editorial",
       "project2": "Cienfuegos",
       "project3": "Futura type fest",
       "project4": "Fossil Fuel",

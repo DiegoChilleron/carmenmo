@@ -1,0 +1,60 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "首页",
+      "about": "关于我",
+      "projects": "项目",
+      "downloadCV": "下载简历",
+      "contact": "联系"
+    },
+    "hero": {
+      "title": "出生于洛格罗尼奥的平面设计师",
+      "description": "热衷于品牌塑造和编辑设计。拥有艺术指导和应用于设计的人工智能硕士学位。",
+      "motto": "创造。连接。重复。",
+      "button": "了解更多"
+    },
+    "about": {
+      "title": "关于我：",
+      "infoTitle": "基本信息",
+      "infoText": "我是一名平面设计师，拥有艺术指导硕士学位和人工智能硕士学位。我结合创意和技术来开发与人们产生联系并增强品牌的视觉识别。当我不做设计时，我会探索人工智能的新创意应用。我热衷于将艺术、设计和技术结合起来，推动视觉传播的未来。如果您想了解更多，请下载我的简历：",
+      "cvButton": "下载简历",
+      "experienceTitle": "工作经验",
+      "experience1": {
+        "position": "平面设计师",
+        "company": "NeuronUP SL",
+        "date": "2024年11月 / 目前",
+        "description": "作为营销部门的设计师，我负责通过所有渠道为公司的沟通赋予生命。我设计和编辑播客和视频，准备销售材料，并为全球活动开发必要的资源。此外，我为社交网络和获客活动创建内容，确保每一件作品都反映公司的身份和价值观。"
+      },
+      "experience2": {
+        "position": "平面设计实习生",
+        "company": "SmartBrand",
+        "date": "2024年7月 / 2024年11月",
+        "description": "在实习期间，我将营销团队的需求转化为不同社交网络的视觉内容。我设计的一些帖子获得了多达一百万次互动，有效地与受众建立联系并加强了品牌的数字存在。"
+      },
+      "experience3": {
+        "position": "用户体验/用户界面设计师",
+        "company": "Dewnir",
+        "date": "2022年7月 / 2023年7月",
+        "description": "我设计直观的数字体验，从线框图和原型到最终界面，确保可用性和与品牌身份的一致性。我与开发人员合作，实施以用户为中心的解决方案。"
+      }
+    },
+    "projects": {
+      "title": "我的一些项目",
+      "project1": "Editorial",
+      "project2": "Cienfuegos",
+      "project3": "Futura type fest",
+      "project4": "Fossil Fuel",
+      "project5": "社交媒体设计",
+      "project6": "用户体验/用户界面设计"
+    },
+    "contact": {
+      "title": "有关于您项目的想法",
+      "description": "想要开始一个新项目或只是打个招呼？给我发送电子邮件，我会尽力在24小时内回复！",
+      "button": "发送消息"
+    },
+    "footer": {
+      "madeWith": "制作于",
+      "by": "由"
+    }
+  }
+}

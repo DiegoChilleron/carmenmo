@@ -10,10 +10,15 @@ interface ProjectModalProps {
 
 export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectModalProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [shouldLoadImages, setShouldLoadImages] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      // Activar la carga de imágenes solo cuando el modal se abre
+      setShouldLoadImages(true);
+      // Resetear el índice al abrir
+      setCurrentImageIndex(0);
     } else {
       document.body.style.overflow = 'unset';
     }
@@ -76,11 +81,14 @@ export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectMo
               </button>
             )}
             
-            <img 
-              src={images[currentImageIndex]} 
-              alt={`${projectName} - Imagen ${currentImageIndex + 1}`}
-              className="project-modal__image"
-            />
+            {shouldLoadImages && (
+              <img 
+                src={images[currentImageIndex]} 
+                alt={`${projectName} - Imagen ${currentImageIndex + 1}`}
+                className="project-modal__image"
+                loading="lazy"
+              />
+            )}
             
             {images.length > 1 && (
               <button 
@@ -99,7 +107,7 @@ export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectMo
             </div>
           )}
           
-          {images.length > 1 && (
+          {images.length > 1 && shouldLoadImages && (
             <div className="project-modal__thumbnails">
               {images.map((image, index) => (
                 <button
@@ -109,7 +117,7 @@ export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectMo
                   }`}
                   onClick={() => setCurrentImageIndex(index)}
                 >
-                  <img src={image} alt={`Miniatura ${index + 1}`} />
+                  <img src={image} alt={`Miniatura ${index + 1}`} loading="lazy" />
                 </button>
               ))}
             </div>
