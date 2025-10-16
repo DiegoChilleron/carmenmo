@@ -16,7 +16,15 @@
     "about": {
       "title": "Chi sono:",
       "infoTitle": "Informazioni generali",
-      "infoText": "Sono una designer grafica con un master in Direzione Artistica e un altro in Intelligenza Artificiale. Unisco creatività e tecnologia per sviluppare identità visive che connettono con le persone e potenziano i brand. Quando non sto progettando, esploro nuove applicazioni creative dell'IA. Mi appassiona unire arte, design e tecnologia per spingere il futuro della comunicazione visiva. Se vuoi saperne di più, scarica il mio CV:",
+      "infoText": {
+        "part1": "Sono una ",
+        "highlight1": "designer grafica",
+        "part2": " con un ",
+        "highlight2": "master in Direzione Artistica",
+        "part3": " e un altro in ",
+        "highlight3": "Intelligenza Artificiale",
+        "part4": ". Unisco creatività e tecnologia per sviluppare identità visive che connettono con le persone e potenziano i brand. Quando non sto progettando, esploro nuove applicazioni creative dell'IA. Mi appassiona unire arte, design e tecnologia per spingere il futuro della comunicazione visiva. Se vuoi saperne di più, scarica il mio CV:"
+      },
       "cvButton": "Scarica CV",
       "experienceTitle": "Esperienza",
       "experience1": {

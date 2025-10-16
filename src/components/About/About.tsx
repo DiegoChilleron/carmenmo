@@ -91,7 +91,13 @@ export const About = () => {
           <img src={starIcon} alt="star" className="about__section-icon" />
           <h3 className="about__section-title">{t('about.infoTitle')}</h3>
           <p className="about__info-text">
-            {t('about.infoText')}
+            {t('about.infoText.part1')}
+            <strong>{t('about.infoText.highlight1')}</strong>
+            {t('about.infoText.part2')}
+            <strong>{t('about.infoText.highlight2')}</strong>
+            {t('about.infoText.part3')}
+            <strong>{t('about.infoText.highlight3')}</strong>
+            {t('about.infoText.part4')}
           </p>
           <motion.button 
             onClick={handleDownloadCV} 

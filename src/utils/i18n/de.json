@@ -16,7 +16,15 @@
     "about": {
       "title": "Über mich:",
       "infoTitle": "Allgemeine Informationen",
-      "infoText": "Ich bin Grafikdesignerin mit einem Master in Art Direction und einem weiteren in Künstlicher Intelligenz. Ich verbinde Kreativität und Technologie, um visuelle Identitäten zu entwickeln, die mit Menschen in Verbindung treten und Marken stärken. Wenn ich nicht entwerfe, erkunde ich neue kreative Anwendungen der KI. Ich bin leidenschaftlich daran interessiert, Kunst, Design und Technologie zu vereinen, um die Zukunft der visuellen Kommunikation voranzutreiben. Wenn Sie mehr wissen möchten, laden Sie meinen Lebenslauf herunter:",
+      "infoText": {
+        "part1": "Ich bin ",
+        "highlight1": "Grafikdesignerin",
+        "part2": " mit einem ",
+        "highlight2": "Master in Art Direction",
+        "part3": " und einem weiteren in ",
+        "highlight3": "Künstlicher Intelligenz",
+        "part4": ". Ich verbinde Kreativität und Technologie, um visuelle Identitäten zu entwickeln, die mit Menschen in Verbindung treten und Marken stärken. Wenn ich nicht entwerfe, erkunde ich neue kreative Anwendungen der KI. Ich bin leidenschaftlich daran interessiert, Kunst, Design und Technologie zu vereinen, um die Zukunft der visuellen Kommunikation voranzutreiben. Wenn Sie mehr wissen möchten, laden Sie meinen Lebenslauf herunter:"
+      },
       "cvButton": "Lebenslauf herunterladen",
       "experienceTitle": "Erfahrung",
       "experience1": {

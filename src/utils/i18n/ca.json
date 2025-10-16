@@ -16,7 +16,15 @@
     "about": {
       "title": "Sobre mi:",
       "infoTitle": "Informació general",
-      "infoText": "Sóc dissenyadora gràfica amb un màster en Direcció d'Art i un altre en Intel·ligència Artificial. Combino creativitat i tecnologia per desenvolupar identitats visuals que connectin amb les persones i potenciïn marques. Quan no estic dissenyant, exploro noves aplicacions creatives de la IA. M'apassiona unir art, disseny i tecnologia per impulsar el futur de la comunicació visual. Si vols saber més, descarrega el meu CV:",
+      "infoText": {
+        "part1": "Sóc ",
+        "highlight1": "dissenyadora gràfica",
+        "part2": " amb un ",
+        "highlight2": "màster en Direcció d'Art",
+        "part3": " i un altre en ",
+        "highlight3": "Intel·ligència Artificial",
+        "part4": ". Combino creativitat i tecnologia per desenvolupar identitats visuals que connectin amb les persones i potenciïn marques. Quan no estic dissenyant, exploro noves aplicacions creatives de la IA. M'apassiona unir art, disseny i tecnologia per impulsar el futur de la comunicació visual. Si vols saber més, descarrega el meu CV:"
+      },
       "cvButton": "Descarregar CV",
       "experienceTitle": "Experiència",
       "experience1": {

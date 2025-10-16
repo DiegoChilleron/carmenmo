@@ -16,7 +16,15 @@
     "about": {
       "title": "Sobre mim:",
       "infoTitle": "Informações gerais",
-      "infoText": "Sou designer gráfica com mestrado em Direção de Arte e outro em Inteligência Artificial. Combino criatividade e tecnologia para desenvolver identidades visuais que se conectam com as pessoas e fortalecem marcas. Quando não estou projetando, exploro novas aplicações criativas da IA. Sou apaixonada por unir arte, design e tecnologia para impulsionar o futuro da comunicação visual. Se você quer saber mais, baixe meu CV:",
+      "infoText": {
+        "part1": "Sou ",
+        "highlight1": "designer gráfica",
+        "part2": " com ",
+        "highlight2": "mestrado em Direção de Arte",
+        "part3": " e outro em ",
+        "highlight3": "Inteligência Artificial",
+        "part4": ". Combino criatividade e tecnologia para desenvolver identidades visuais que se conectam com as pessoas e fortalecem marcas. Quando não estou projetando, exploro novas aplicações criativas da IA. Sou apaixonada por unir arte, design e tecnologia para impulsionar o futuro da comunicação visual. Se você quer saber mais, baixe meu CV:"
+      },
       "cvButton": "Baixar CV",
       "experienceTitle": "Experiência",
       "experience1": {

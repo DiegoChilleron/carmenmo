@@ -16,7 +16,15 @@
     "about": {
       "title": "Sobre mí:",
       "infoTitle": "Información general",
-      "infoText": "Soy diseñadora gráfica con un máster en Dirección de Arte y otro en Inteligencia Artificial. Combino creatividad y tecnología para desarrollar identidades visuales que conecten con las personas y potencien marcas. Cuando no estoy diseñando, exploro nuevas aplicaciones creativas de la IA. Me apasiona unir arte, diseño y tecnología para impulsar el futuro de la comunicación visual. Si quieres saber más, descarga mi CV:",
+      "infoText": {
+        "part1": "Soy ",
+        "highlight1": "diseñadora gráfica",
+        "part2": " con un ",
+        "highlight2": "máster en Dirección de Arte",
+        "part3": " y otro en ",
+        "highlight3": "Inteligencia Artificial",
+        "part4": ". Combino creatividad y tecnología para desarrollar identidades visuales que conecten con las personas y potencien marcas. Cuando no estoy diseñando, exploro nuevas aplicaciones creativas de la IA. Me apasiona unir arte, diseño y tecnología para impulsar el futuro de la comunicación visual. Si quieres saber más, descarga mi CV:"
+      },
       "cvButton": "Descargar CV",
       "experienceTitle": "Experiencia",
       "experience1": {

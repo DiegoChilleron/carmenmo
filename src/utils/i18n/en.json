@@ -16,7 +16,15 @@
     "about": {
       "title": "About me:",
       "infoTitle": "General information",
-      "infoText": "I am a graphic designer with a master's degree in Art Direction and another in Artificial Intelligence. I combine creativity and technology to develop visual identities that connect with people and empower brands. When I'm not designing, I explore new creative applications of AI. I'm passionate about bringing together art, design and technology to drive the future of visual communication. If you want to know more, download my CV:",
+      "infoText": {
+        "part1": "I am a ",
+        "highlight1": "graphic designer",
+        "part2": " with a ",
+        "highlight2": "master's degree in Art Direction",
+        "part3": " and another in ",
+        "highlight3": "Artificial Intelligence",
+        "part4": ". I combine creativity and technology to develop visual identities that connect with people and empower brands. When I'm not designing, I explore new creative applications of AI. I'm passionate about bringing together art, design and technology to drive the future of visual communication. If you want to know more, download my CV:"
+      },
       "cvButton": "Download CV",
       "experienceTitle": "Experience",
       "experience1": {

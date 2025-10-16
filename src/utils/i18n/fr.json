@@ -16,7 +16,15 @@
     "about": {
       "title": "À propos de moi:",
       "infoTitle": "Informations générales",
-      "infoText": "Je suis designer graphique avec un master en Direction Artistique et un autre en Intelligence Artificielle. Je combine créativité et technologie pour développer des identités visuelles qui connectent avec les gens et renforcent les marques. Quand je ne conçois pas, j'explore de nouvelles applications créatives de l'IA. Je suis passionnée par l'union de l'art, du design et de la technologie pour propulser l'avenir de la communication visuelle. Si vous voulez en savoir plus, téléchargez mon CV:",
+      "infoText": {
+        "part1": "Je suis ",
+        "highlight1": "designer graphique",
+        "part2": " avec un ",
+        "highlight2": "master en Direction Artistique",
+        "part3": " et un autre en ",
+        "highlight3": "Intelligence Artificielle",
+        "part4": ". Je combine créativité et technologie pour développer des identités visuelles qui connectent avec les gens et renforcent les marques. Quand je ne conçois pas, j'explore de nouvelles applications créatives de l'IA. Je suis passionnée par l'union de l'art, du design et de la technologie pour propulser l'avenir de la communication visuelle. Si vous voulez en savoir plus, téléchargez mon CV:"
+      },
       "cvButton": "Télécharger CV",
       "experienceTitle": "Expérience",
       "experience1": {
