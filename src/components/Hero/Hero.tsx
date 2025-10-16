@@ -21,6 +21,22 @@ export const Hero = () => {
   // Líneas horizontales - posiciones en porcentaje
   const horizontalLines = [15, 35, 55, 75];
 
+  // Variantes de animación para los elementos de texto
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 }
+  };
+
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  };
+
+  const scaleIn = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1 }
+  };
+
   return (
     <section className="hero">
       {/* Animated grid background */}
@@ -69,20 +85,45 @@ export const Hero = () => {
       </div>
 
       <div className="hero__container">
-        <img 
+        <motion.img 
           src={logoHero} 
           alt="Carmen Moreno Logo" 
           className="hero__logo"
+          variants={scaleIn}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.8, ease: "easeOut" }}
         />
-        <h1 className="hero__title">
+        <motion.h1 
+          className="hero__title"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        >
           {t('hero.title')}
-        </h1>
-        <p className="hero__description">
+        </motion.h1>
+        <motion.p 
+          className="hero__description"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+        >
           {t('hero.description')} <span className="hero__description--italic">{t('hero.motto')}</span>
-        </p>
-        <button onClick={handleLearnMore} className="hero__button button-gradient">
+        </motion.p>
+        <motion.button 
+          onClick={handleLearnMore} 
+          className="hero__button button-gradient"
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
           {t('hero.button')}
-        </button>
+        </motion.button>
 
         {/* Animated tools slider */}
         <div className="hero__tools-slider">

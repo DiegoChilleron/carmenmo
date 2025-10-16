@@ -1,0 +1,121 @@
+import { useEffect, useState } from 'react';
+import './ProjectModal.css';
+
+interface ProjectModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  images: string[];
+  projectName: string;
+}
+
+export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectModalProps) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      window.addEventListener('keydown', handleEscape);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleEscape);
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const handleOverlayClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
+  return (
+    <div className="project-modal-overlay" onClick={handleOverlayClick}>
+      <div className="project-modal">
+        <button className="project-modal__close" onClick={onClose}>
+          ×
+        </button>
+        
+        <div className="project-modal__content">
+          <h2 className="project-modal__title">{projectName}</h2>
+          
+          <div className="project-modal__image-container">
+            {images.length > 1 && (
+              <button 
+                className="project-modal__nav project-modal__nav--prev" 
+                onClick={prevImage}
+                aria-label="Imagen anterior"
+              >
+                ‹
+              </button>
+            )}
+            
+            <img 
+              src={images[currentImageIndex]} 
+              alt={`${projectName} - Imagen ${currentImageIndex + 1}`}
+              className="project-modal__image"
+            />
+            
+            {images.length > 1 && (
+              <button 
+                className="project-modal__nav project-modal__nav--next" 
+                onClick={nextImage}
+                aria-label="Siguiente imagen"
+              >
+                ›
+              </button>
+            )}
+          </div>
+          
+          {images.length > 1 && (
+            <div className="project-modal__counter">
+              {currentImageIndex + 1} / {images.length}
+            </div>
+          )}
+          
+          {images.length > 1 && (
+            <div className="project-modal__thumbnails">
+              {images.map((image, index) => (
+                <button
+                  key={index}
+                  className={`project-modal__thumbnail ${
+                    index === currentImageIndex ? 'project-modal__thumbnail--active' : ''
+                  }`}
+                  onClick={() => setCurrentImageIndex(index)}
+                >
+                  <img src={image} alt={`Miniatura ${index + 1}`} />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
