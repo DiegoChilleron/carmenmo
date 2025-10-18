@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import { ProjectModal } from './ProjectModal';
 
 // Importar imágenes de Cienfuegos
-import cienfuegosPortada from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-portada.webp';
+import cienfuegosPortada from '../../assets/photos/proyects/Cienfuegos/cienfuegos-portada.webp';
 import cienfuegos1 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-1.webp';
 import cienfuegos2 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-2.webp';
 import cienfuegos3 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-3.webp';
