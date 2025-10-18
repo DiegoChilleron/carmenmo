@@ -94,14 +94,14 @@ export const Hero = () => {
           variants={scaleIn}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "linear" }}
         />
         <motion.h1 
           className="hero__title"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "linear" }}
         >
           {t('hero.title')}
         </motion.h1>
@@ -110,7 +110,7 @@ export const Hero = () => {
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "linear" }}
         >
           {t('hero.description')} <span className="hero__description--italic">{t('hero.motto')}</span>
         </motion.p>
@@ -120,7 +120,7 @@ export const Hero = () => {
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.6, ease: "linear" }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -138,7 +138,7 @@ export const Hero = () => {
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: 20,
+                duration: 40,
                 ease: "linear",
               },
             }}

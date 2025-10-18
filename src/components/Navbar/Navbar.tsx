@@ -79,7 +79,7 @@ export const Navbar = () => {
                         ))}
                         <li className="navbar__menu-item">
                             <a
-                                href="/cv.pdf"
+                                href="/assets/icons/pdf/Carmen_Moreno_CV.pdf"
                                 download="Carmen_Moreno_CV.pdf"
                                 className="navbar__menu-link--download"
                             >
@@ -150,7 +150,7 @@ export const Navbar = () => {
                         ))}
                         <li className="navbar__mobile-item">
                             <a
-                                href="/cv.pdf"
+                                href="/assets/icons/pdf/Carmen_Moreno_CV.pdf"
                                 download="Carmen_Moreno_CV.pdf"
                                 className="navbar__mobile-link--download"
                                 onClick={closeMenu}

@@ -5,9 +5,13 @@ import { ProjectModal } from './ProjectModal';
 
 // Importar imágenes de Cienfuegos
 import cienfuegosPortada from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-portada.webp';
-import cienfuegos1 from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-1.webp';
-import cienfuegos2 from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-2.webp';
-import cienfuegos3 from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-3.webp';
+import cienfuegos1 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-1.webp';
+import cienfuegos2 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-2.webp';
+import cienfuegos3 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-3.webp';
+import cienfuegos4 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-4.webp';
+import cienfuegos5 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-5.webp';
+import cienfuegos6 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-6.webp';
+import cienfuegos7 from '../../assets/photos/proyects/Cienfuegos/cienfuegos-7.webp';
 
 // Importar imágenes de Festival Tipográfico
 import festivalTipograficoPortada from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-portada.webp';
@@ -62,7 +66,7 @@ const ProjectCard = ({ number, name, image, onClick, index }: ProjectCardProps) 
       style={{ cursor: 'pointer' }}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
+      transition={{ duration: 0.6, delay: index * 0.15, ease: "linear" }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
     >
       <div className="projects__card-image-wrapper">
@@ -123,7 +127,11 @@ export const Projects = () => {
       images: [
         cienfuegos1,
         cienfuegos2,
-        cienfuegos3
+        cienfuegos3,
+        cienfuegos4,
+        cienfuegos5,
+        cienfuegos6,
+        cienfuegos7
       ]
     },
     {
@@ -180,7 +188,7 @@ export const Projects = () => {
           className="projects__title"
           initial={{ opacity: 0, y: 30 }}
           animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "linear" }}
         >
           {t('projects.title')}
         </motion.h2>

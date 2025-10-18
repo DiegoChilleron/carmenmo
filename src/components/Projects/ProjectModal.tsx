@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './ProjectModal.css';
 
 interface ProjectModalProps {
@@ -10,16 +10,9 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal = ({ isOpen, onClose, images, projectName, projectDescription }: ProjectModalProps) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [shouldLoadImages, setShouldLoadImages] = useState(false);
-
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      // Activar la carga de imágenes solo cuando el modal se abre
-      setShouldLoadImages(true);
-      // Resetear el índice al abrir
-      setCurrentImageIndex(0);
     } else {
       document.body.style.overflow = 'unset';
     }
@@ -47,14 +40,6 @@ export const ProjectModal = ({ isOpen, onClose, images, projectName, projectDesc
 
   if (!isOpen) return null;
 
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
   const handleOverlayClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
       onClose();
@@ -64,53 +49,47 @@ export const ProjectModal = ({ isOpen, onClose, images, projectName, projectDesc
   return (
     <div className="project-modal-overlay" onClick={handleOverlayClick}>
       <div className="project-modal">
-        <button className="project-modal__close" onClick={onClose}>
-          ×
+        <button className="project-modal__close" onClick={onClose} aria-label="Cerrar modal">
+          <svg 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </button>
         
         <div className="project-modal__content">
-          <h2 className="project-modal__title">{projectName}</h2>
-          
-          {projectDescription && (
-            <p className="project-modal__description">{projectDescription}</p>
-          )}
-          
-          <div className="project-modal__image-container">
-            {images.length > 1 && (
-              <button 
-                className="project-modal__nav project-modal__nav--prev" 
-                onClick={prevImage}
-                aria-label="Imagen anterior"
-              >
-                ‹
-              </button>
-            )}
-            
-            {shouldLoadImages && (
-              <img 
-                src={images[currentImageIndex]} 
-                alt={`${projectName} - Imagen ${currentImageIndex + 1}`}
-                className="project-modal__image"
-                loading="lazy"
-              />
-            )}
-            
-            {images.length > 1 && (
-              <button 
-                className="project-modal__nav project-modal__nav--next" 
-                onClick={nextImage}
-                aria-label="Siguiente imagen"
-              >
-                ›
-              </button>
-            )}
+          {/* Columna izquierda - Imágenes */}
+          <div className="project-modal__images">
+            {images.map((image, index) => (
+              <div key={index} className="project-modal__image-wrapper">
+                <img 
+                  src={image} 
+                  alt={`${projectName} - Imagen ${index + 1}`}
+                  className="project-modal__image"
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                />
+              </div>
+            ))}
           </div>
           
-          {images.length > 1 && (
-            <div className="project-modal__counter">
-              {currentImageIndex + 1} / {images.length}
+          {/* Columna derecha - Información */}
+          <div className="project-modal__info">
+            <div className="project-modal__info-sticky">
+              <h2 className="project-modal__title">{projectName}</h2>
+              
+              {projectDescription && (
+                <p className="project-modal__description">{projectDescription}</p>
+              )}
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>

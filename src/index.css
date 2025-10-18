@@ -60,7 +60,7 @@ p {
 }
 
 .button {
-    @apply shadow-xs text-gray-900 bg-white hover:text-white border border-gray-300 hover:bg-gray-800 font-medium rounded-xl text-sm md:text-base px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-400 dark:text-gray-100 dark:bg-darkprimary dark:hover:text-white dark:hover:bg-gray-600 transition-all duration-300 ease-in-out;
+    @apply shadow-xs text-gray-900 bg-white hover:text-white border border-gray-300 hover:bg-gray-800 font-medium rounded-xl text-sm md:text-base px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-400 dark:text-gray-100 dark:bg-darkprimary dark:hover:text-white dark:hover:bg-gray-600 transition-all duration-300 ease-linear;
 }
 
 /* Gradient Button - Shared styles */
@@ -197,7 +197,7 @@ section {
 
 /* Hero Section */
 .hero {
-    @apply min-h-screen flex items-center justify-center px-4 pt-16;
+    @apply min-h-screen flex items-center justify-center px-4 pt-16 pb-16;
     position: relative;
     overflow: hidden;
 }
@@ -244,6 +244,10 @@ section {
 
 .hero__container {
     @apply max-w-4xl mx-auto text-center relative z-10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero__logo {
@@ -269,7 +273,7 @@ section {
 /* Hero Tools Slider */
 .hero__tools-slider {
   @apply overflow-hidden backdrop-blur-sm py-4;
-  margin-top: 6rem;
+  margin-top: 10rem;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -332,7 +336,7 @@ section {
 }
 
 .about__cv-button {
-  @apply px-8 py-3 rounded-full font-medium bg-black text-white border-2 border-transparent cursor-pointer transition-all duration-300 ease-in-out;
+  @apply px-8 py-3 rounded-full font-medium bg-black text-white border-2 border-transparent cursor-pointer transition-all duration-300 ease-linear;
   background-image: 
     linear-gradient(#000000, #000000),
     linear-gradient(to right, #7E88F8, #FBD19D);
@@ -349,7 +353,7 @@ section {
 }
 
 .about__card {
-  @apply p-6 rounded-lg transition-transform duration-300 ease-in-out;
+  @apply p-6 rounded-lg transition-transform duration-300 ease-linear;
 }
 
 .about__card:hover {
@@ -390,7 +394,7 @@ section {
 }
 
 .projects__card {
-  @apply md:flex items-center w-full p-12 gap-12 bg-[#151515] rounded-none transition-transform duration-300 ease-in-out cursor-pointer;
+  @apply md:flex items-center w-full p-12 gap-12 bg-[#151515] rounded-none transition-transform duration-300 ease-linear cursor-pointer;
 }
 
 @media (max-width: 768px) {
@@ -593,7 +597,7 @@ section {
 }
 
 .footer__language-select {
-    @apply px-3 py-1.5 text-white bg-transparent border-0 border-b border-b-white/20 cursor-pointer text-[13px] font-light transition-all duration-300 ease-in-out pr-5 bg-no-repeat bg-right;
+    @apply px-3 py-1.5 text-white bg-transparent border-0 border-b border-b-white/20 cursor-pointer text-[13px] font-light transition-all duration-300 ease-linear pr-5 bg-no-repeat bg-right;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

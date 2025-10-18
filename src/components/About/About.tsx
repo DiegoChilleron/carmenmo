@@ -22,7 +22,7 @@ const ExperienceCard = ({ position, company, date, description, index }: Experie
       className="about__card"
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+      transition={{ duration: 0.6, delay: index * 0.2, ease: "linear" }}
     >
       <h3 className="about__card-position">{position}</h3>
       <p className="about__card-company">{company}</p>
@@ -64,7 +64,12 @@ export const About = () => {
   ];
 
   const handleDownloadCV = () => {
-    window.open('/cv.pdf', '_blank'); // Asegúrate de colocar el CV en public/cv.pdf
+    const link = document.createElement('a');
+    link.href = '/assets/icons/pdf/Carmen_Moreno_CV.pdf';
+    link.download = 'Carmen_Moreno_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -75,7 +80,7 @@ export const About = () => {
           className="about__title"
           initial={{ opacity: 0, y: 30 }}
           animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "linear" }}
         >
           {t('about.title')}
         </motion.h2>
@@ -86,7 +91,7 @@ export const About = () => {
           className="about__section about__section--info"
           initial={{ opacity: 0, y: 40 }}
           animate={infoInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "linear" }}
         >
           <img src={starIcon} alt="star" className="about__section-icon" />
           <h3 className="about__section-title">{t('about.infoTitle')}</h3>
@@ -115,7 +120,7 @@ export const About = () => {
           className="about__section about__section--experience"
           initial={{ opacity: 0, y: 40 }}
           animate={experienceInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "linear" }}
         >
           <img src={starIcon} alt="star" className="about__section-icon" />
           <h3 className="about__section-title">{t('about.experienceTitle')}</h3>

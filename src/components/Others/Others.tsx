@@ -21,7 +21,7 @@ export const Others = () => {
           className="section-title"
           initial={{ opacity: 0, y: 30 }}
           animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
         >
           {t('others.title')}
         </motion.h2>
@@ -32,7 +32,7 @@ export const Others = () => {
             className="others__card"
             initial={{ opacity: 0, x: -50 }}
             animate={card1InView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
           >
             <img src={comillasIcon} alt="comillas" className="others__card-icon" />
             <p className="others__card-text">{t('others.card1')}</p>
@@ -43,7 +43,7 @@ export const Others = () => {
             className="others__card"
             initial={{ opacity: 0, x: 50 }}
             animate={card2InView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
           >
             <img src={comillasIcon} alt="comillas" className="others__card-icon" />
             <p className="others__card-text">{t('others.card2')}</p>
