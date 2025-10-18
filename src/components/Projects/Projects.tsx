@@ -10,7 +10,7 @@ import cienfuegos2 from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-2.we
 import cienfuegos3 from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-3.webp';
 
 // Importar imágenes de Festival Tipográfico
-import festivalTipograficoPortada from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-Portada.webp';
+import festivalTipograficoPortada from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-portada.webp';
 import festivalTipografico1 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-1.webp';
 import festivalTipografico2 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-2.webp';
 import festivalTipografico3 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-3.webp';
