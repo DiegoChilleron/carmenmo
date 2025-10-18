@@ -53,6 +53,8 @@ export const Navbar = () => {
                                 src={logoMo} 
                                 alt="Carmen Moreno Logo" 
                                 className="navbar__logo-img"
+                                width="32"
+                                height="32"
                             />
                         </Link>
                     </div>

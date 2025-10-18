@@ -49,11 +49,22 @@
     "projects": {
       "title": "Algunos de mis proyectos",
       "project1": "Editorial",
+      "project1Description": "La despoblación rural es uno de los desafíos más significativos que enfrenta España en la actualidad, y La Rioja no es ajena a este fenómeno. Esta revista tiene como objetivo no solo documentar este proceso, sino también despertar conciencia sobre las historias, los rostros y las oportunidades que aún residen en estos pueblos olvidados.",
       "project2": "Cienfuegos",
+      "project2Description": "Packaging primario y secundario para unas salsas picantes. El diseño de las etiquetas quiere hacer referencia al origen y la naturalidad del producto con las diversas plantas y animales, también el grado de picante según el color del animal que aparece.",
       "project3": "Futura type fest",
+      "project3Description": "Creación de un festival tipográfico dedicado a la tipografía Futura. Requería de un 'Welcome Kit' el cual debía contener información de los 21 ponentes que formaban parte del festival. Se escoge una paleta cromática reducida y se trabaja con los diferentes elementos para crear la marca gráfica.",
       "project4": "Fossil Fuel",
+      "project4Description": "Creación de un logotipo para 'Fossil Fuel non-profileration treaty', la cual cuenta con tres propuestas gráficas.",
       "project5": "Diseño RRSS",
-      "project6": "Diseño UX/UI"
+      "project5Description": "Creación de diferentes posts para cuentas de Instagram gracias a la realización de prácticas en la empresa 'SmartBrand'",
+      "project6": "Diseño UX/UI",
+      "project6Description": "Ilustración para una portada del single 'Flores pa tu pelo' Del artista Dellafuente ft. Pepe Vicio."
+    },
+    "others": {
+      "title": "Otros datos de interés",
+      "card1": "Participación en los LAUS categoría Estudiantes con el proyecto: Life in Plastic isn't fantastic",
+      "card2": "Certificación B2 en Inglés por la Universidad Internacional Menéndez Pelayo"
     },
     "contact": {
       "title": "Alguna idea para tu proyecto",

@@ -89,6 +89,8 @@ export const Hero = () => {
           src={logoHero} 
           alt="Carmen Moreno Logo" 
           className="hero__logo"
+          width="300"
+          height="300"
           variants={scaleIn}
           initial="hidden"
           animate="visible"

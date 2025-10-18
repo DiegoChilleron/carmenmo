@@ -49,11 +49,22 @@
     "projects": {
       "title": "Alguns dels meus projectes",
       "project1": "Editorial",
+      "project1Description": "La despoblació rural és un dels reptes més significatius que enfronta Espanya en l'actualitat, i La Rioja no és aliena a aquest fenomen. Aquesta revista té com a objectiu no només documentar aquest procés, sinó també despertar consciència sobre les històries, els rostres i les oportunitats que encara resideixen en aquests pobles oblidats.",
       "project2": "Cienfuegos",
+      "project2Description": "Packaging primari i secundari per unes salses picants. El disseny de les etiquetes vol fer referència a l'origen i la naturalitat del producte amb les diverses plantes i animals, també el grau de picant segons el color de l'animal que apareix.",
       "project3": "Futura type fest",
+      "project3Description": "Creació d'un festival tipogràfic dedicat a la tipografia Futura. Requeria d'un 'Welcome Kit' el qual havia de contenir informació dels 21 ponents que formaven part del festival. Es tria una paleta cromàtica reduïda i es treballa amb els diferents elements per crear la marca gràfica.",
       "project4": "Fossil Fuel",
+      "project4Description": "Creació d'un logotip per 'Fossil Fuel non-profileration treaty', la qual compta amb tres propostes gràfiques.",
       "project5": "Disseny XSXS",
-      "project6": "Disseny UX/UI"
+      "project5Description": "Creació de diferents posts per comptes d'Instagram gràcies a la realització de pràctiques a l'empresa 'SmartBrand'",
+      "project6": "Disseny UX/UI",
+      "project6Description": "Il·lustració per una portada del single 'Flores pa tu pelo' de l'artista Dellafuente ft. Pepe Vicio."
+    },
+    "others": {
+      "title": "Altres dades d'interès",
+      "card1": "Participació als LAUS categoria Estudiants amb el projecte: Life in Plastic isn't fantastic",
+      "card2": "Certificació B2 en Anglès per la Universitat Internacional Menéndez Pelayo"
     },
     "contact": {
       "title": "Alguna idea per al teu projecte",

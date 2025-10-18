@@ -10,10 +10,17 @@ import cienfuegos2 from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-2.we
 import cienfuegos3 from '../../assets/photos/proyects/Cienfuegos/Cienfuegos-3.webp';
 
 // Importar imágenes de Festival Tipográfico
-import festivalTipograficoPortada from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-portada.webp';
+import festivalTipograficoPortada from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-Portada.webp';
 import festivalTipografico1 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-1.webp';
 import festivalTipografico2 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-2.webp';
 import festivalTipografico3 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-3.webp';
+
+// Importar imágenes de Fossil Fuel
+import fossilFuelPortada from '../../assets/photos/proyects/Fossil-Fuel/FossilFuel-portada.webp';
+import fossilFuelLogo from '../../assets/photos/proyects/Fossil-Fuel/FossilFuel-logo.webp';
+
+// Importar imagen de Diseños
+import disenosPortada from '../../assets/photos/proyects/Disenos/Disenos-portada.webp';
 
 // Importar imágenes de Editorial
 import editorialPortada from '../../assets/photos/proyects/Editorial/Editorial-portada.webp';
@@ -78,7 +85,7 @@ const ProjectCard = ({ number, name, image, onClick, index }: ProjectCardProps) 
 
 export const Projects = () => {
   const { t } = useTranslation();
-  const [selectedProject, setSelectedProject] = useState<{ name: string; images: string[] } | null>(null);
+  const [selectedProject, setSelectedProject] = useState<{ name: string; images: string[]; description?: string } | null>(null);
   const titleRef = useRef(null);
   const titleInView = useInView(titleRef, { once: true, margin: "-100px" });
 
@@ -86,6 +93,7 @@ export const Projects = () => {
     {
       number: 1,
       name: t('projects.project1'),
+      description: t('projects.project1Description'),
       image: editorialPortada,
       images: [
         editorial1,
@@ -110,6 +118,7 @@ export const Projects = () => {
     {
       number: 2,
       name: t('projects.project2'),
+      description: t('projects.project2Description'),
       image: cienfuegosPortada,
       images: [
         cienfuegos1,
@@ -120,6 +129,7 @@ export const Projects = () => {
     {
       number: 3,
       name: t('projects.project3'),
+      description: t('projects.project3Description'),
       image: festivalTipograficoPortada,
       images: [
         festivalTipografico1,
@@ -130,19 +140,24 @@ export const Projects = () => {
     {
       number: 4,
       name: t('projects.project4'),
-      image: '/path/to/image4.jpg', // Placeholder - añadir ruta real
-      images: []
+      description: t('projects.project4Description'),
+      image: fossilFuelPortada,
+      images: [
+        fossilFuelLogo
+      ]
     },
     {
       number: 5,
       name: t('projects.project5'),
+      description: t('projects.project5Description'),
       image: '/path/to/image5.jpg', // Placeholder - añadir ruta real
       images: []
     },
     {
       number: 6,
       name: t('projects.project6'),
-      image: '/path/to/image6.jpg', // Placeholder - añadir ruta real
+      description: t('projects.project6Description'),
+      image: disenosPortada,
       images: []
     }
   ];
@@ -151,7 +166,8 @@ export const Projects = () => {
     if (project.images.length > 0) {
       setSelectedProject({
         name: project.name,
-        images: project.images
+        images: project.images,
+        description: project.description
       });
     }
   };
@@ -187,6 +203,7 @@ export const Projects = () => {
         onClose={() => setSelectedProject(null)}
         images={selectedProject?.images || []}
         projectName={selectedProject?.name || ''}
+        projectDescription={selectedProject?.description}
       />
     </section>
   )

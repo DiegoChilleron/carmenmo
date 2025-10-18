@@ -34,6 +34,8 @@ export const Footer = () => {
               src={logoMo} 
               alt="Carmen Moreno Logo" 
               className="footer__logo-img"
+              width="32"
+              height="32"
             />
           </div>
 

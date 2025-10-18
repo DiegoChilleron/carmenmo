@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 @theme inline {
     --color-lightprimary: #0F1111;
@@ -171,15 +172,15 @@ section {
 }
 
 .navbar__mobile-list {
-    @apply py-4 space-y-4;
+    @apply py-4 space-y-4 flex flex-col items-center justify-center;
 }
 
 .navbar__mobile-item {
-    /* No additional styles needed */
+    @apply text-center;
 }
 
 .navbar__mobile-link {
-    @apply flex items-center text-white hover:text-rose-500 transition-colors duration-200 font-medium;
+    @apply flex items-center justify-center text-white hover:text-rose-500 transition-colors duration-200 font-medium;
 }
 
 .navbar__mobile-icon {
@@ -187,11 +188,11 @@ section {
 }
 
 .navbar__mobile-link--download {
-    @apply block text-white hover:text-rose-500 transition-colors duration-200 font-medium;
+    @apply block text-white hover:text-rose-500 transition-colors duration-200 font-medium text-center;
 }
 
 .navbar__mobile-contact-btn {
-    @apply w-full;
+    @apply w-full flex justify-center;
 }
 
 /* Hero Section */
@@ -392,6 +393,12 @@ section {
   @apply md:flex items-center w-full p-12 gap-12 bg-[#151515] rounded-none transition-transform duration-300 ease-in-out cursor-pointer;
 }
 
+@media (max-width: 768px) {
+  .projects__card {
+    @apply flex flex-col gap-8;
+  }
+}
+
 .projects__card:hover {
   @apply -translate-y-1;
 }
@@ -410,6 +417,12 @@ section {
 
 .projects__card-number {
   @apply mb-4 w-20 h-20 rounded-full flex items-center justify-center text-[28px] font-semibold bg-black relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects__card:hover .projects__card-number {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(126, 136, 248, 0.25);
 }
 
 .projects__card-number::before {
@@ -425,6 +438,11 @@ section {
   -webkit-mask-composite: xor;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
+  transition: opacity 0.3s ease;
+}
+
+.projects__card:hover .projects__card-number::before {
+  opacity: 0.8;
 }
 
 .projects__card-number-text {
@@ -437,6 +455,48 @@ section {
 
 .projects__card-name {
   @apply text-4xl font-medium text-white text-center;
+}
+
+
+/* Others Section */
+.others {
+  @apply py-16 px-4 bg-[#0F1111];
+}
+
+.others__container {
+  @apply max-w-7xl mx-auto;
+}
+
+.others__cards {
+  @apply flex flex-col md:flex-row gap-16 mt-12;
+}
+
+.others__card {
+  @apply flex-1 bg-[#151515] rounded-3xl p-8 transition-all duration-300 relative;
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(#151515, #151515),
+    linear-gradient(135deg, 
+      rgba(251, 209, 157, 1) 0%,
+      rgba(190, 150, 200, 1) 25%,
+      rgba(126, 136, 248, 0) 50%,
+      rgba(126, 136, 248, 0) 100%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.others__card:hover {
+  @apply transform -translate-y-1;
+  box-shadow: 0 4px 20px rgba(126, 136, 248, 0.15);
+}
+
+.others__card-icon {
+  @apply w-10 h-10 mb-4;
+}
+
+.others__card-text {
+  @apply text-lg text-white leading-relaxed;
 }
 
 

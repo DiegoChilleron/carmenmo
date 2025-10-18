@@ -49,11 +49,22 @@
     "projects": {
       "title": "Einige meiner Projekte",
       "project1": "Editorial",
+      "project1Description": "Die Landflucht ist eine der größten Herausforderungen, mit denen Spanien heute konfrontiert ist, und La Rioja ist diesem Phänomen nicht fremd. Dieses Magazin zielt nicht nur darauf ab, diesen Prozess zu dokumentieren, sondern auch das Bewusstsein für die Geschichten, Gesichter und Chancen zu schärfen, die noch in diesen vergessenen Dörfern bestehen.",
       "project2": "Cienfuegos",
+      "project2Description": "Primär- und Sekundärverpackung für scharfe Saucen. Das Design der Etiketten soll auf die Herkunft und Natürlichkeit des Produkts mit verschiedenen Pflanzen und Tieren hinweisen, sowie auf den Schärfegrad je nach Farbe des erscheinenden Tieres.",
       "project3": "Futura type fest",
+      "project3Description": "Erstellung eines typografischen Festivals, das der Schriftart Futura gewidmet ist. Es erforderte ein 'Welcome Kit', das Informationen über die 21 Redner enthalten musste, die Teil des Festivals waren. Es wird eine reduzierte Farbpalette gewählt und mit verschiedenen Elementen gearbeitet, um die grafische Marke zu erstellen.",
       "project4": "Fossil Fuel",
+      "project4Description": "Erstellung eines Logos für 'Fossil Fuel non-profileration treaty', das drei grafische Vorschläge enthält.",
       "project5": "Social Media Design",
-      "project6": "UX/UI Design"
+      "project5Description": "Erstellung verschiedener Posts für Instagram-Konten dank eines Praktikums im Unternehmen 'SmartBrand'",
+      "project6": "UX/UI Design",
+      "project6Description": "Illustration für ein Cover der Single 'Flores pa tu pelo' des Künstlers Dellafuente ft. Pepe Vicio."
+    },
+    "others": {
+      "title": "Weitere Interessante Daten",
+      "card1": "Teilnahme an LAUS Kategorie Studenten mit dem Projekt: Life in Plastic isn't fantastic",
+      "card2": "B2 Englisch-Zertifizierung der Universidad Internacional Menéndez Pelayo"
     },
     "contact": {
       "title": "Eine Idee für Ihr Projekt",

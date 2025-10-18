@@ -6,9 +6,10 @@ interface ProjectModalProps {
   onClose: () => void;
   images: string[];
   projectName: string;
+  projectDescription?: string;
 }
 
-export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectModalProps) => {
+export const ProjectModal = ({ isOpen, onClose, images, projectName, projectDescription }: ProjectModalProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [shouldLoadImages, setShouldLoadImages] = useState(false);
 
@@ -70,6 +71,10 @@ export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectMo
         <div className="project-modal__content">
           <h2 className="project-modal__title">{projectName}</h2>
           
+          {projectDescription && (
+            <p className="project-modal__description">{projectDescription}</p>
+          )}
+          
           <div className="project-modal__image-container">
             {images.length > 1 && (
               <button 
@@ -104,22 +109,6 @@ export const ProjectModal = ({ isOpen, onClose, images, projectName }: ProjectMo
           {images.length > 1 && (
             <div className="project-modal__counter">
               {currentImageIndex + 1} / {images.length}
-            </div>
-          )}
-          
-          {images.length > 1 && shouldLoadImages && (
-            <div className="project-modal__thumbnails">
-              {images.map((image, index) => (
-                <button
-                  key={index}
-                  className={`project-modal__thumbnail ${
-                    index === currentImageIndex ? 'project-modal__thumbnail--active' : ''
-                  }`}
-                  onClick={() => setCurrentImageIndex(index)}
-                >
-                  <img src={image} alt={`Miniatura ${index + 1}`} loading="lazy" />
-                </button>
-              ))}
             </div>
           )}
         </div>

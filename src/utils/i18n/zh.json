@@ -49,11 +49,22 @@
     "projects": {
       "title": "我的一些项目",
       "project1": "Editorial",
+      "project1Description": "农村人口减少是西班牙今天面临的最重大挑战之一，拉里奥哈也不例外。这本杂志的目的不仅是记录这一过程，还旨在提高人们对这些被遗忘村庄中仍然存在的故事、面孔和机会的认识。",
       "project2": "Cienfuegos",
+      "project2Description": "辣酱的主要和次要包装。标签设计旨在通过各种植物和动物来体现产品的起源和自然性，以及根据出现的动物颜色来表示辣度等级。",
       "project3": "Futura type fest",
+      "project3Description": "创建一个专门献给Futura字体的排版节日。它需要一个'Welcome Kit'，其中必须包含参加节日的21位演讲者的信息。选择了简化的调色板，并使用不同的元素来创建图形品牌。",
       "project4": "Fossil Fuel",
+      "project4Description": "为'Fossil Fuel non-profileration treaty'创建徽标，包含三个图形提案。",
       "project5": "社交媒体设计",
-      "project6": "用户体验/用户界面设计"
+      "project5Description": "感谢在'SmartBrand'公司实习，为Instagram账户创建了不同的帖子",
+      "project6": "用户体验/用户界面设计",
+      "project6Description": "为艺术家Dellafuente ft. Pepe Vicio的单曲'Flores pa tu pelo'创作封面插图。"
+    },
+    "others": {
+      "title": "其他有趣的数据",
+      "card1": "参加LAUS学生类别项目：Life in Plastic isn't fantastic",
+      "card2": "由门德斯·佩拉约国际大学颁发的英语B2证书"
     },
     "contact": {
       "title": "有关于您项目的想法",

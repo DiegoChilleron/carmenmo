@@ -49,11 +49,22 @@
     "projects": {
       "title": "Some of my projects",
       "project1": "Editorial",
+      "project1Description": "Rural depopulation is one of the most significant challenges facing Spain today, and La Rioja is no stranger to this phenomenon. This magazine aims not only to document this process, but also to raise awareness about the stories, faces and opportunities that still reside in these forgotten villages.",
       "project2": "Cienfuegos",
+      "project2Description": "Primary and secondary packaging for hot sauces. The label design aims to reference the origin and naturalness of the product with various plants and animals, as well as the level of spiciness according to the color of the animal that appears.",
       "project3": "Futura type fest",
+      "project3Description": "Creation of a typographic festival dedicated to the Futura typeface. It required a 'Welcome Kit' which had to contain information about the 21 speakers who were part of the festival. A reduced color palette is chosen and work is done with different elements to create the graphic brand.",
       "project4": "Fossil Fuel",
+      "project4Description": "Creation of a logo for 'Fossil Fuel non-profileration treaty', which has three graphic proposals.",
       "project5": "Social Media Design",
-      "project6": "UX/UI Design"
+      "project5Description": "Creation of different posts for Instagram accounts thanks to an internship at the company 'SmartBrand'",
+      "project6": "UX/UI Design",
+      "project6Description": "Illustration for a cover of the single 'Flores pa tu pelo' by artist Dellafuente ft. Pepe Vicio."
+    },
+    "others": {
+      "title": "Other Interesting Facts",
+      "card1": "Participation in LAUS Student category with the project: Life in Plastic isn't fantastic",
+      "card2": "B2 English Certification by Universidad Internacional Menéndez Pelayo"
     },
     "contact": {
       "title": "Got an idea for your project",

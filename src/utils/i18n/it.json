@@ -49,11 +49,22 @@
     "projects": {
       "title": "Alcuni dei miei progetti",
       "project1": "Editorial",
+      "project1Description": "Lo spopolamento rurale è una delle sfide più significative che la Spagna deve affrontare oggi, e La Rioja non è estranea a questo fenomeno. Questa rivista mira non solo a documentare questo processo, ma anche a sensibilizzare sulle storie, i volti e le opportunità che ancora risiedono in questi villaggi dimenticati.",
       "project2": "Cienfuegos",
+      "project2Description": "Imballaggio primario e secondario per salse piccanti. Il design delle etichette vuole fare riferimento all'origine e alla naturalità del prodotto con diverse piante e animali, nonché al grado di piccantezza in base al colore dell'animale che appare.",
       "project3": "Futura type fest",
+      "project3Description": "Creazione di un festival tipografico dedicato al carattere Futura. Richiedeva un 'Welcome Kit' che doveva contenere informazioni sui 21 relatori che facevano parte del festival. Si sceglie una tavolozza di colori ridotta e si lavora con diversi elementi per creare il marchio grafico.",
       "project4": "Fossil Fuel",
+      "project4Description": "Creazione di un logo per 'Fossil Fuel non-profileration treaty', che ha tre proposte grafiche.",
       "project5": "Design Social Media",
-      "project6": "Design UX/UI"
+      "project5Description": "Creazione di diversi post per account Instagram grazie a uno stage presso l'azienda 'SmartBrand'",
+      "project6": "Design UX/UI",
+      "project6Description": "Illustrazione per una copertina del singolo 'Flores pa tu pelo' dell'artista Dellafuente ft. Pepe Vicio."
+    },
+    "others": {
+      "title": "Altri Dati di Interesse",
+      "card1": "Partecipazione ai LAUS categoria Studenti con il progetto: Life in Plastic isn't fantastic",
+      "card2": "Certificazione B2 in Inglese dell'Universidad Internacional Menéndez Pelayo"
     },
     "contact": {
       "title": "Hai un'idea per il tuo progetto",
