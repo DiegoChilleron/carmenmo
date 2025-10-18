@@ -36,6 +36,7 @@ export const Footer = () => {
               className="footer__logo-img"
               width="32"
               height="32"
+              loading="lazy"
             />
           </div>
 

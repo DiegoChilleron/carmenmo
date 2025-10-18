@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    @apply text-center text-3xl md:text-4xl xl:text-5xl py-8 tracking-widest inline-flex items-center gap-4;
+    @apply text-center text-3xl md:text-4xl xl:text-5xl py-8 tracking-widest inline-flex items-center gap-4 text-white;
 }
 
 h2::after {
