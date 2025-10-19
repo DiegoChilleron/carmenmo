@@ -26,6 +26,16 @@ import fossilFuelLogo from '../../assets/photos/proyects/Fossil-Fuel/FossilFuel-
 // Importar imagen de Diseños
 import disenosPortada from '../../assets/photos/proyects/Disenos/Disenos-portada.webp';
 
+// Importar imágenes de Yvonne Aguirre
+import yvonneAguirrePortada from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-portada.webp';
+import yvonneAguirre1 from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-1.webp';
+import yvonneAguirre2 from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-2.webp';
+import yvonneAguirre3 from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-3.webp';
+import yvonneAguirre4 from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-4.webp';
+import yvonneAguirre5 from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-5.webp';
+import yvonneAguirre6 from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-6.webp';
+import yvonneAguirre7 from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-7.webp';
+
 // Importar imágenes de Editorial
 import editorialPortada from '../../assets/photos/proyects/Editorial/Editorial-portada.webp';
 import editorial1 from '../../assets/photos/proyects/Editorial/Editorial-1.webp';
@@ -40,11 +50,6 @@ import editorial9 from '../../assets/photos/proyects/Editorial/Editorial-9.webp'
 import editorial10 from '../../assets/photos/proyects/Editorial/Editorial-10.webp';
 import editorial11 from '../../assets/photos/proyects/Editorial/Editorial-11.webp';
 import editorial12 from '../../assets/photos/proyects/Editorial/Editorial-12.webp';
-import editorial13 from '../../assets/photos/proyects/Editorial/Editorial-13.webp';
-import editorial14 from '../../assets/photos/proyects/Editorial/Editorial-14.webp';
-import editorial15 from '../../assets/photos/proyects/Editorial/Editorial-15.webp';
-import editorial16 from '../../assets/photos/proyects/Editorial/Editorial-16.webp';
-import editorial17 from '../../assets/photos/proyects/Editorial/Editorial-17.webp';
 
 interface ProjectCardProps {
   number: number;
@@ -111,12 +116,7 @@ export const Projects = () => {
         editorial9,
         editorial10,
         editorial11,
-        editorial12,
-        editorial13,
-        editorial14,
-        editorial15,
-        editorial16,
-        editorial17
+        editorial12
       ]
     },
     {
@@ -158,8 +158,16 @@ export const Projects = () => {
       number: 5,
       name: t('projects.project5'),
       description: t('projects.project5Description'),
-      image: '/path/to/image5.jpg', // Placeholder - añadir ruta real
-      images: []
+      image: yvonneAguirrePortada,
+      images: [
+        yvonneAguirre1,
+        yvonneAguirre2,
+        yvonneAguirre3,
+        yvonneAguirre4,
+        yvonneAguirre5,
+        yvonneAguirre6,
+        yvonneAguirre7
+      ]
     },
     {
       number: 6,

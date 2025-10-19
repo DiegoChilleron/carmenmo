@@ -147,6 +147,10 @@
   background-clip: text;
 }
 
+.project-modal__title::after {
+  display: none;
+}
+
 .project-modal__description {
   font-size: 16px;
   line-height: 1.8;
