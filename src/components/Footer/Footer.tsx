@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import logoMo from '../../assets/icons/logo_mo.svg';
+import logoMo from '../../assets/icons/logo-white.svg';
 
 export const Footer = () => {
   const { t, i18n } = useTranslation();

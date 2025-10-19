@@ -111,7 +111,7 @@ section {
 }
 
 .navbar__logo-img {
-    @apply h-8 w-auto;
+    @apply h-16 w-auto;
 }
 
 /* Navbar Menu */

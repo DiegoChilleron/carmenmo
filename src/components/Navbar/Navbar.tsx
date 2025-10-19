@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import logoMo from '../../assets/icons/logo_mo.svg';
+import logoMo from '../../assets/icons/logo-white.svg';
 import homeIcon from '../../assets/icons/home_icon.svg';
 
 export const Navbar = () => {
