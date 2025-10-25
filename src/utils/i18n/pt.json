@@ -69,7 +69,21 @@
     "contact": {
       "title": "Tem uma ideia para seu projeto",
       "description": "Quer começar um novo projeto ou apenas dizer olá? Envie-me um e-mail e farei o possível para responder em 24 horas!",
-      "button": "Enviar mensagem"
+      "button": "Enviar mensagem",
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem",
+      "send": "Enviar",
+      "sending": "Enviando...",
+      "loading": "Enviando sua mensagem...",
+      "success": "Obrigado {{name}}! Sua mensagem foi enviada com sucesso. Responderei em breve.",
+      "error": {
+        "missingFields": "Por favor, preencha todos os campos do formulário.",
+        "submitFailed": "Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente."
+      }
+    },
+    "socialnetworks": {
+      "title": "Envie-me uma mensagem"
     },
     "footer": {
       "madeWith": "Feito com",

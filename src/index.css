@@ -464,7 +464,7 @@ section {
 
 /* Others Section */
 .others {
-  @apply py-16 px-4 bg-[#0F1111];
+  @apply py-24 px-4 bg-[#0F1111];
 }
 
 .others__container {
@@ -506,11 +506,11 @@ section {
 
 /* Contact Section */
 .contact {
-  @apply min-h-screen py-16 px-4 bg-[#0F1111] relative overflow-hidden;
+  @apply py-16 px-4 bg-[#0F1111] relative overflow-hidden;
 }
 
 .contact__content {
-  @apply flex items-center justify-between max-w-7xl mx-auto min-h-[80vh];
+  @apply flex items-center justify-between max-w-7xl mx-auto;
 }
 
 .contact__container {
@@ -549,6 +549,86 @@ section {
 
 .contact__line--horizontal {
   @apply w-[200px] h-[2px];
+}
+
+/* Contact Form */
+.contact-form {
+    @apply rounded-3xl max-w-2xl mx-auto my-8 p-8 md:p-12 shadow-xl border-0;
+    background: rgba(21, 21, 21, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.message {
+    @apply text-center text-sm md:text-lg xl:text-xl font-light py-2;
+}
+
+.form-field {
+    @apply mb-6 relative;
+}
+
+.form-label {
+    @apply block text-xs font-medium mb-2 uppercase tracking-wider;
+    color: rgba(126, 136, 248, 0.8);
+}
+
+.form-input,
+.form-textarea {
+    @apply w-full rounded-2xl p-4 text-white placeholder-gray-500 outline-none transition-all duration-300;
+    background: rgba(42, 42, 42, 0.6);
+    border: 2px solid rgba(126, 136, 248, 0.2);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    background: rgba(42, 42, 42, 0.8);
+    border-color: #7E88F8;
+    box-shadow: 0 0 0 4px rgba(126, 136, 248, 0.1);
+}
+
+.form-textarea {
+    @apply min-h-32 resize-none;
+}
+
+.btn-submit {
+    @apply w-full rounded-2xl text-black px-8 py-4 font-medium text-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] focus:outline-none focus:ring-0 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+    background: linear-gradient(to right, #7E88F8, #FBD19D);
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: linear-gradient(to right, #FBD19D, #7E88F8);
+}
+
+.message.success {
+    @apply text-green-400;
+}
+
+.message.error {
+    @apply text-red-400;
+}
+
+.message.loading {
+    color: #FBD19D;
+}
+
+.container-modern {
+    @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+.card {
+    @apply rounded-2xl shadow-xl;
+    background: rgba(21, 21, 21, 0.8);
+    border: 1px solid rgba(126, 136, 248, 0.2);
+}
+
+.card-hover {
+    @apply transition-shadow duration-300 hover:shadow-2xl;
+}
+
+.glass {
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    background: rgba(15, 17, 17, 0.6);
+    border: 1px solid rgba(126, 136, 248, 0.2);
 }
 
 /* Footer */

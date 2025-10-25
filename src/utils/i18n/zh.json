@@ -69,7 +69,21 @@
     "contact": {
       "title": "有关于您项目的想法",
       "description": "想要开始一个新项目或只是打个招呼？给我发送电子邮件，我会尽力在24小时内回复！",
-      "button": "发送消息"
+      "button": "发送消息",
+      "name": "姓名",
+      "email": "电子邮件",
+      "message": "消息",
+      "send": "发送",
+      "sending": "发送中...",
+      "loading": "正在发送您的消息...",
+      "success": "谢谢您 {{name}}！您的消息已成功发送。我会尽快回复。",
+      "error": {
+        "missingFields": "请填写所有表单字段。",
+        "submitFailed": "发送消息时出错。请重试。"
+      }
+    },
+    "socialnetworks": {
+      "title": "给我发消息"
     },
     "footer": {
       "madeWith": "制作于",

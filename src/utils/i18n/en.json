@@ -69,7 +69,21 @@
     "contact": {
       "title": "Got an idea for your project",
       "description": "Want to start a new project or just say hello? Send me an email and I'll do my best to respond within 24 hours!",
-      "button": "Send message"
+      "button": "Send message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending...",
+      "loading": "Sending your message...",
+      "success": "Thank you {{name}}! Your message has been sent successfully. I'll reply soon.",
+      "error": {
+        "missingFields": "Please fill in all form fields.",
+        "submitFailed": "There was an error sending the message. Please try again."
+      }
+    },
+    "socialnetworks": {
+      "title": "Send me a message"
     },
     "footer": {
       "madeWith": "Made with",

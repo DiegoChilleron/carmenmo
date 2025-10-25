@@ -69,7 +69,21 @@
     "contact": {
       "title": "Hai un'idea per il tuo progetto",
       "description": "Vuoi iniziare un nuovo progetto o semplicemente salutare? Inviami un'email e farò del mio meglio per rispondere entro 24 ore!",
-      "button": "Invia messaggio"
+      "button": "Invia messaggio",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "send": "Invia",
+      "sending": "Invio in corso...",
+      "loading": "Invio del tuo messaggio...",
+      "success": "Grazie {{name}}! Il tuo messaggio è stato inviato con successo. Ti risponderò presto.",
+      "error": {
+        "missingFields": "Per favore, compila tutti i campi del modulo.",
+        "submitFailed": "Si è verificato un errore nell'invio del messaggio. Riprova per favore."
+      }
+    },
+    "socialnetworks": {
+      "title": "Inviami un messaggio"
     },
     "footer": {
       "madeWith": "Fatto con",

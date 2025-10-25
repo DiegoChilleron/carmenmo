@@ -69,7 +69,21 @@
     "contact": {
       "title": "Eine Idee für Ihr Projekt",
       "description": "Möchten Sie ein neues Projekt starten oder einfach Hallo sagen? Senden Sie mir eine E-Mail und ich werde mein Bestes tun, um innerhalb von 24 Stunden zu antworten!",
-      "button": "Nachricht senden"
+      "button": "Nachricht senden",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Senden",
+      "sending": "Wird gesendet...",
+      "loading": "Ihre Nachricht wird gesendet...",
+      "success": "Danke {{name}}! Ihre Nachricht wurde erfolgreich gesendet. Ich werde bald antworten.",
+      "error": {
+        "missingFields": "Bitte füllen Sie alle Formularfelder aus.",
+        "submitFailed": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+      }
+    },
+    "socialnetworks": {
+      "title": "Senden Sie mir eine Nachricht"
     },
     "footer": {
       "madeWith": "Gemacht mit",

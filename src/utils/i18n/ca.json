@@ -69,7 +69,21 @@
     "contact": {
       "title": "Alguna idea per al teu projecte",
       "description": "Vols començar un nou projecte o simplement saludar? Envia'm un correu i faré tot el possible per respondre en 24 hores!",
-      "button": "Enviar missatge"
+      "button": "Enviar missatge",
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "message": "Missatge",
+      "send": "Enviar",
+      "sending": "Enviant...",
+      "loading": "Enviant el teu missatge...",
+      "success": "Gràcies {{name}}! El teu missatge s'ha enviat correctament. Et respondré aviat.",
+      "error": {
+        "missingFields": "Si us plau, completa tots els camps del formulari.",
+        "submitFailed": "Hi ha hagut un error en enviar el missatge. Si us plau, torna-ho a provar."
+      }
+    },
+    "socialnetworks": {
+      "title": "Envia'm un missatge"
     },
     "footer": {
       "madeWith": "Fet amb",
