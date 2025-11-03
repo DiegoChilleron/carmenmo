@@ -2,12 +2,14 @@
 @import "./fonts.css";
 
 @theme inline {
-    --color-lightprimary: #0F1111;
-    --color-lightsecondary: #EFECE3;
+    --color-lightprimary: #070c1e;
+    --color-lightsecondary: #0d152d;
     --color-lighttertiary: #ECE3D1;
-    --color-darkprimary: #0E172C;
-    --color-darksecondary: #2F2F45;
+    --color-darkprimary: #0F1111;
+    --color-darksecondary: #2a2d2d;
     --color-darktertiary: #464761;
+    --color-gradient-purple: #7E88F8;
+    --color-gradient-peach: #FBD19D;
 }
 
 @theme {
@@ -67,20 +69,20 @@ p {
 .button-gradient {
     @apply px-8 py-3 rounded-full transition-all duration-400 font-medium;
     color: #000000;
-    background: linear-gradient(to right, #7E88F8, #FBD19D);
+    background: linear-gradient(to right, var(--color-gradient-purple), var(--color-gradient-peach));
     border: 2px solid transparent;
     background-image: 
-        linear-gradient(to right, #7E88F8, #FBD19D),
-        linear-gradient(to right, #FBD19D, #7E88F8);
+        linear-gradient(to right, var(--color-gradient-purple), var(--color-gradient-peach)),
+        linear-gradient(to right, var(--color-gradient-peach), var(--color-gradient-purple));
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
 
 .button-gradient:hover {
-    background: linear-gradient(to right, #FBD19D, #7E88F8);
+    background: linear-gradient(to right, var(--color-gradient-peach), var(--color-gradient-purple));
     background-image: 
-        linear-gradient(to right, #FBD19D, #7E88F8),
-        linear-gradient(to right, #7E88F8, #FBD19D);
+        linear-gradient(to right, var(--color-gradient-peach), var(--color-gradient-purple)),
+        linear-gradient(to right, var(--color-gradient-purple), var(--color-gradient-peach));
     background-origin: border-box;
     background-clip: padding-box, border-box;
     transform: scale(1.05);
@@ -102,7 +104,7 @@ section {
 }
 
 .navbar__content {
-    @apply flex items-center justify-between h-16;
+  @apply flex items-center justify-between h-14;
 }
 
 /* Navbar Logo */
@@ -111,21 +113,21 @@ section {
 }
 
 .navbar__logo-img {
-    @apply h-16 w-auto;
+  @apply h-14 w-auto;
 }
 
 /* Navbar Menu */
 .navbar__menu {
-    @apply hidden md:flex items-center rounded-full pt-[0.0625rem] pb-[0.0625rem] px-12 gap-12 bg-[#0F1111] border-2 border-transparent;
+  @apply hidden md:flex items-center rounded-full h-14 px-10 gap-10 bg-[#0F1111] border-2 border-transparent;
     background-image: 
         linear-gradient(#0F1111, #0F1111),
-        linear-gradient(to right, #7E88F8, #FBD19D);
+        linear-gradient(to right, var(--color-gradient-purple), var(--color-gradient-peach));
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
 
 .navbar__menu-link {
-    @apply text-white hover:text-rose-500 transition-colors duration-200 font-medium flex items-center;
+  @apply text-white hover:text-lighttertiary dark:hover:text-darktertiary transition-colors duration-200 font-medium flex items-center;
 }
 
 .navbar__menu-icon {
@@ -133,7 +135,7 @@ section {
 }
 
 .navbar__menu-link--download {
-    @apply text-white hover:text-rose-500 transition-colors duration-200 font-medium;
+  @apply text-white hover:text-lighttertiary dark:hover:text-darktertiary transition-colors duration-200 font-medium;
 }
 
 /* Navbar Contact Button */
@@ -151,7 +153,7 @@ section {
 }
 
 .navbar__mobile-toggle-btn {
-    @apply text-white hover:text-rose-500;
+  @apply text-white hover:text-lighttertiary dark:hover:text-darktertiary;
 }
 
 .navbar__mobile-toggle-icon {
@@ -180,7 +182,7 @@ section {
 }
 
 .navbar__mobile-link {
-    @apply flex items-center justify-center text-white hover:text-rose-500 transition-colors duration-200 font-medium;
+  @apply flex items-center justify-center text-white hover:text-lighttertiary dark:hover:text-darktertiary transition-colors duration-200 font-medium;
 }
 
 .navbar__mobile-icon {
@@ -188,7 +190,7 @@ section {
 }
 
 .navbar__mobile-link--download {
-    @apply block text-white hover:text-rose-500 transition-colors duration-200 font-medium text-center;
+  @apply block text-white hover:text-lighttertiary dark:hover:text-darktertiary transition-colors duration-200 font-medium text-center;
 }
 
 .navbar__mobile-contact-btn {
@@ -299,7 +301,7 @@ section {
 
 /* About Section */
 .about {
-  @apply min-h-screen py-16 px-4 bg-[#0F1111];
+  @apply min-h-screen py-16 px-4 bg-lightprimary dark:bg-darkprimary;
 }
 
 .about__container {
@@ -339,7 +341,7 @@ section {
   @apply px-8 py-3 rounded-full font-medium bg-black text-white border-2 border-transparent cursor-pointer transition-all duration-300 ease-linear;
   background-image: 
     linear-gradient(#000000, #000000),
-    linear-gradient(to right, #7E88F8, #FBD19D);
+    linear-gradient(to right, var(--color-gradient-purple), var(--color-gradient-peach));
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
@@ -361,7 +363,7 @@ section {
 }
 
 .about__card-position {
-  @apply mb-2 text-lg font-semibold text-[#7E88F8];
+  @apply mb-2 text-lg font-semibold text-gradient-purple;
 }
 
 .about__card-company {
@@ -378,7 +380,7 @@ section {
 
 /* Projects Section */
 .projects {
-  @apply min-h-screen py-16 px-4 bg-[#0F1111];
+  @apply min-h-screen py-16 px-4 bg-lightprimary dark:bg-darkprimary;
 }
 
 .projects__container {
@@ -394,7 +396,7 @@ section {
 }
 
 .projects__card {
-  @apply md:flex items-center w-full p-12 gap-12 bg-[#151515] rounded-none transition-transform duration-300 ease-linear cursor-pointer;
+  @apply md:flex items-center w-full p-12 gap-12 bg-lightsecondary dark:bg-darksecondary rounded-none transition-transform duration-300 ease-linear cursor-pointer;
 }
 
 @media (max-width: 768px) {
@@ -435,8 +437,8 @@ section {
   background: linear-gradient(180deg, 
     #666666 0%, 
     #666666 88%, 
-    #7E88F8 88%, 
-    #FBD19D 100%
+    var(--color-gradient-purple) 88%, 
+    var(--color-gradient-peach) 100%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -451,7 +453,7 @@ section {
 
 .projects__card-number-text {
   @apply relative z-10;
-  background: linear-gradient(135deg, #7E88F8, #FBD19D);
+  background: linear-gradient(135deg, var(--color-gradient-purple), var(--color-gradient-peach));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -464,7 +466,7 @@ section {
 
 /* Others Section */
 .others {
-  @apply py-24 px-4 bg-[#0F1111];
+  @apply py-24 px-4 bg-lightprimary dark:bg-darkprimary;
 }
 
 .others__container {
@@ -476,10 +478,14 @@ section {
 }
 
 .others__card {
-  @apply flex-1 bg-[#151515] rounded-3xl p-8 transition-all duration-300 relative;
+  @apply flex-1 bg-lightsecondary dark:bg-darksecondary rounded-3xl p-8 transition-all duration-300 relative;
   border: 2px solid transparent;
+}
+
+/* Light mode gradient */
+.others__card {
   background-image: 
-    linear-gradient(#151515, #151515),
+    linear-gradient(#111b3a, #111b3a),
     linear-gradient(135deg, 
       rgba(251, 209, 157, 1) 0%,
       rgba(190, 150, 200, 1) 25%,
@@ -488,6 +494,22 @@ section {
     );
   background-origin: border-box;
   background-clip: padding-box, border-box;
+}
+
+/* Dark mode gradient */
+@media (prefers-color-scheme: dark) {
+  .others__card {
+    background-image: 
+      linear-gradient(#2a2d2d, #2a2d2d),
+      linear-gradient(135deg, 
+        rgba(251, 209, 157, 1) 0%,
+        rgba(190, 150, 200, 1) 25%,
+        rgba(126, 136, 248, 0) 50%,
+        rgba(126, 136, 248, 0) 100%
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
 }
 
 .others__card:hover {
@@ -506,7 +528,7 @@ section {
 
 /* Contact Section */
 .contact {
-  @apply py-16 px-4 bg-[#0F1111] relative overflow-hidden;
+  @apply py-16 px-4 bg-lightprimary dark:bg-darkprimary relative overflow-hidden;
 }
 
 .contact__content {
@@ -553,8 +575,7 @@ section {
 
 /* Contact Form */
 .contact-form {
-    @apply rounded-3xl max-w-2xl mx-auto my-8 p-8 md:p-12 shadow-xl border-0;
-    background: rgba(21, 21, 21, 0.8);
+    @apply rounded-3xl max-w-2xl mx-auto my-8 p-8 md:p-12 shadow-xl border-0 bg-lightsecondary dark:bg-darksecondary;
     backdrop-filter: blur(10px);
 }
 
@@ -568,20 +589,20 @@ section {
 
 .form-label {
     @apply block text-xs font-medium mb-2 uppercase tracking-wider;
-    color: rgba(126, 136, 248, 0.8);
+    color: white;
 }
 
 .form-input,
 .form-textarea {
-    @apply w-full rounded-2xl p-4 text-white placeholder-gray-500 outline-none transition-all duration-300;
-    background: rgba(42, 42, 42, 0.6);
+    @apply w-full rounded-2xl p-4 text-white placeholder-gray-400 outline-none transition-all duration-300;
+    background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(126, 136, 248, 0.2);
 }
 
 .form-input:focus,
 .form-textarea:focus {
-    background: rgba(42, 42, 42, 0.8);
-    border-color: #7E88F8;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-gradient-purple);
     box-shadow: 0 0 0 4px rgba(126, 136, 248, 0.1);
 }
 
@@ -591,11 +612,11 @@ section {
 
 .btn-submit {
     @apply w-full rounded-2xl text-black px-8 py-4 font-medium text-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] focus:outline-none focus:ring-0 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
-    background: linear-gradient(to right, #7E88F8, #FBD19D);
+    background: linear-gradient(to right, var(--color-gradient-purple), var(--color-gradient-peach));
 }
 
 .btn-submit:hover:not(:disabled) {
-    background: linear-gradient(to right, #FBD19D, #7E88F8);
+    background: linear-gradient(to right, var(--color-gradient-peach), var(--color-gradient-purple));
 }
 
 .message.success {
@@ -607,7 +628,7 @@ section {
 }
 
 .message.loading {
-    color: #FBD19D;
+    color: var(--color-gradient-peach);
 }
 
 .container-modern {
@@ -633,7 +654,7 @@ section {
 
 /* Footer */
 .footer {
-    @apply w-full py-8 bg-[#0F1111];
+    @apply w-full py-8 bg-lightprimary dark:bg-darkprimary;
 }
 
 .footer__container {
@@ -658,13 +679,13 @@ section {
     @apply flex items-center space-x-8 rounded-full px-8 py-2 bg-[#0F1111] border-2 border-transparent;
     background-image: 
         linear-gradient(#0F1111, #0F1111),
-        linear-gradient(to right, #7E88F8, #FBD19D);
+        linear-gradient(to right, var(--color-gradient-purple), var(--color-gradient-peach));
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
 
 .footer__social-link {
-    @apply text-white hover:text-rose-500 transition-colors duration-200;
+  @apply text-white hover:text-lighttertiary dark:hover:text-darktertiary transition-colors duration-200;
 }
 
 .footer__social-icon {

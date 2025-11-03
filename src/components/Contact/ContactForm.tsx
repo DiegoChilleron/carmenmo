@@ -24,7 +24,7 @@ export const ContactForm = () => {
             }
 
             try {
-                const response = await fetch("https://formspree.io/f/xpwpavqo", {
+                const response = await fetch("https://formspree.io/f/0000", {
                     method: "POST",
                     body: formData,
                     headers: {
@@ -64,12 +64,12 @@ export const ContactForm = () => {
                     <input className="form-input" type="text" id="name" name="name" />
                 </div>
                 <div className="form-field">
-                    <label className="form-label" htmlFor="email">{t('contact.email')}</label>
-                    <input className="form-input" type="email" id="email" name="email" />
+                    <label className="form-label" htmlFor="email">{t('contact.email')} *</label>
+                    <input className="form-input" type="email" id="email" name="email" required />
                 </div>
                 <div className="form-field">
-                    <label className="form-label" htmlFor="message">{t('contact.message')}</label>
-                    <textarea className="form-textarea" id="message" name="message" />
+                    <label className="form-label" htmlFor="message">{t('contact.message')} *</label>
+                    <textarea className="form-textarea" id="message" name="message" required />
                 </div>
                 <div className="pt-2">
                     <button className="btn-submit" type="submit" disabled={isPending}>

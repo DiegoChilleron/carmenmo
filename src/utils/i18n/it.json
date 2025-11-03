@@ -53,12 +53,12 @@
       "project2": "Cienfuegos",
       "project2Description": "Imballaggio primario e secondario per salse piccanti. Il design delle etichette vuole fare riferimento all'origine e alla naturalità del prodotto con diverse piante e animali, nonché al grado di piccantezza in base al colore dell'animale che appare.",
       "project3": "Futura type fest",
-      "project3Description": "Creazione di un festival tipografico dedicato al carattere Futura. Richiedeva un 'Welcome Kit' che doveva contenere informazioni sui 21 relatori che facevano parte del festival. Si sceglie una tavolozza di colori ridotta e si lavora con diversi elementi per creare il marchio grafico.",
-      "project4": "Fossil Fuel",
-      "project4Description": "Creazione di un logo per 'Fossil Fuel non-profileration treaty', che ha tre proposte grafiche.",
-      "project5": "Yvonne Aguirre Avvocati",
+      "project3Description": "Creazione di un festival tipografico dedicato al carattere Futura. Richiedeva un 'Welcome Kit' che doveva contenere informazioni sui 21 relatori che facevano parte del festival. Viene scelta una tavolozza di colori ridotta e si lavora con diversi elementi per creare il marchio grafico.",
+      "project4": "Social Media",
+      "project4Description": "Design di contenuti per social media e marketing digitale.",
+      "project5": "Yvonne Aguirre Abogados",
       "project5Description": "Design dell'identità visiva per lo studio legale Yvonne Aguirre.",
-      "project6": "Design UX/UI",
+      "project6": "Illustrazione",
       "project6Description": "Illustrazione per una copertina del singolo 'Flores pa tu pelo' dell'artista Dellafuente ft. Pepe Vicio."
     },
     "others": {
@@ -69,7 +69,7 @@
     "contact": {
       "title": "Hai un'idea per il tuo progetto",
       "description": "Vuoi iniziare un nuovo progetto o semplicemente salutare? Inviami un'email e farò del mio meglio per rispondere entro 24 ore!",
-      "button": "Invia messaggio",
+      "button": "Invia email",
       "name": "Nome",
       "email": "Email",
       "message": "Messaggio",

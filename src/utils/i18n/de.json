@@ -53,12 +53,12 @@
       "project2": "Cienfuegos",
       "project2Description": "Primär- und Sekundärverpackung für scharfe Saucen. Das Design der Etiketten soll auf die Herkunft und Natürlichkeit des Produkts mit verschiedenen Pflanzen und Tieren hinweisen, sowie auf den Schärfegrad je nach Farbe des erscheinenden Tieres.",
       "project3": "Futura type fest",
-      "project3Description": "Erstellung eines typografischen Festivals, das der Schriftart Futura gewidmet ist. Es erforderte ein 'Welcome Kit', das Informationen über die 21 Redner enthalten musste, die Teil des Festivals waren. Es wird eine reduzierte Farbpalette gewählt und mit verschiedenen Elementen gearbeitet, um die grafische Marke zu erstellen.",
-      "project4": "Fossil Fuel",
-      "project4Description": "Erstellung eines Logos für 'Fossil Fuel non-profileration treaty', das drei grafische Vorschläge enthält.",
-      "project5": "Yvonne Aguirre Rechtsanwälte",
-      "project5Description": "Visuelle Identitätsgestaltung für die Anwaltskanzlei Yvonne Aguirre.",
-      "project6": "UX/UI Design",
+      "project3Description": "Erstellung eines typografischen Festivals, das der Futura-Schriftart gewidmet ist. Es erforderte ein 'Welcome Kit', das Informationen über die 21 Redner enthalten sollte, die Teil des Festivals waren. Eine reduzierte Farbpalette wird gewählt und mit verschiedenen Elementen gearbeitet, um die grafische Marke zu erstellen.",
+      "project4": "Soziale Medien",
+      "project4Description": "Erstellung von Inhalten für soziale Medien und digitales Marketing.",
+      "project5": "Yvonne Aguirre Abogados",
+      "project5Description": "Design der visuellen Identität für die Anwaltskanzlei Yvonne Aguirre.",
+      "project6": "Illustration",
       "project6Description": "Illustration für ein Cover der Single 'Flores pa tu pelo' des Künstlers Dellafuente ft. Pepe Vicio."
     },
     "others": {
@@ -69,7 +69,7 @@
     "contact": {
       "title": "Eine Idee für Ihr Projekt",
       "description": "Möchten Sie ein neues Projekt starten oder einfach Hallo sagen? Senden Sie mir eine E-Mail und ich werde mein Bestes tun, um innerhalb von 24 Stunden zu antworten!",
-      "button": "Nachricht senden",
+      "button": "E-Mail senden",
       "name": "Name",
       "email": "E-Mail",
       "message": "Nachricht",

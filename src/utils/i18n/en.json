@@ -53,12 +53,12 @@
       "project2": "Cienfuegos",
       "project2Description": "Primary and secondary packaging for hot sauces. The label design aims to reference the origin and naturalness of the product with various plants and animals, as well as the level of spiciness according to the color of the animal that appears.",
       "project3": "Futura type fest",
-      "project3Description": "Creation of a typographic festival dedicated to the Futura typeface. It required a 'Welcome Kit' which had to contain information about the 21 speakers who were part of the festival. A reduced color palette is chosen and work is done with different elements to create the graphic brand.",
-      "project4": "Fossil Fuel",
-      "project4Description": "Creation of a logo for 'Fossil Fuel non-profileration treaty', which has three graphic proposals.",
-      "project5": "Yvonne Aguirre Attorneys",
+      "project3Description": "Creation of a typographic festival dedicated to Futura typeface. It required a 'Welcome Kit' which had to contain information about the 21 speakers who were part of the festival. A reduced color palette is chosen and different elements are worked with to create the graphic brand.",
+      "project4": "Social Media",
+      "project4Description": "Social media and digital marketing content design.",
+      "project5": "Yvonne Aguirre Abogados",
       "project5Description": "Visual identity design for the law firm Yvonne Aguirre.",
-      "project6": "UX/UI Design",
+      "project6": "Illustration",
       "project6Description": "Illustration for a cover of the single 'Flores pa tu pelo' by artist Dellafuente ft. Pepe Vicio."
     },
     "others": {
@@ -69,7 +69,7 @@
     "contact": {
       "title": "Got an idea for your project",
       "description": "Want to start a new project or just say hello? Send me an email and I'll do my best to respond within 24 hours!",
-      "button": "Send message",
+      "button": "Send email",
       "name": "Name",
       "email": "Email",
       "message": "Message",

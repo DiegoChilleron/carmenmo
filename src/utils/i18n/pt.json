@@ -53,12 +53,12 @@
       "project2": "Cienfuegos",
       "project2Description": "Embalagem primária e secundária para molhos picantes. O design das etiquetas quer fazer referência à origem e naturalidade do produto com várias plantas e animais, também o grau de picância segundo a cor do animal que aparece.",
       "project3": "Futura type fest",
-      "project3Description": "Criação de um festival tipográfico dedicado à tipografia Futura. Requeria um 'Welcome Kit' que deveria conter informações dos 21 palestrantes que faziam parte do festival. Escolhe-se uma paleta cromática reduzida e trabalha-se com os diferentes elementos para criar a marca gráfica.",
-      "project4": "Fossil Fuel",
-      "project4Description": "Criação de um logotipo para 'Fossil Fuel non-profileration treaty', que conta com três propostas gráficas.",
-      "project5": "Yvonne Aguirre Advogados",
+      "project3Description": "Criação de um festival tipográfico dedicado à tipografia Futura. Requeria um 'Welcome Kit' que deveria conter informações sobre os 21 palestrantes que faziam parte do festival. Uma paleta de cores reduzida é escolhida e diferentes elementos são trabalhados para criar a marca gráfica.",
+      "project4": "Redes Sociais",
+      "project4Description": "Design de conteúdo para redes sociais e marketing digital.",
+      "project5": "Yvonne Aguirre Abogados",
       "project5Description": "Design de identidade visual para o escritório de advocacia Yvonne Aguirre.",
-      "project6": "Design UX/UI",
+      "project6": "Ilustração",
       "project6Description": "Ilustração para uma capa do single 'Flores pa tu pelo' do artista Dellafuente ft. Pepe Vicio."
     },
     "others": {
@@ -69,7 +69,7 @@
     "contact": {
       "title": "Tem uma ideia para seu projeto",
       "description": "Quer começar um novo projeto ou apenas dizer olá? Envie-me um e-mail e farei o possível para responder em 24 horas!",
-      "button": "Enviar mensagem",
+      "button": "Enviar e-mail",
       "name": "Nome",
       "email": "E-mail",
       "message": "Mensagem",

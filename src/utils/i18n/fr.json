@@ -53,12 +53,12 @@
       "project2": "Cienfuegos",
       "project2Description": "Emballage primaire et secondaire pour des sauces piquantes. La conception des étiquettes vise à faire référence à l'origine et au naturel du produit avec diverses plantes et animaux, ainsi qu'au degré de piquant selon la couleur de l'animal qui apparaît.",
       "project3": "Futura type fest",
-      "project3Description": "Création d'un festival typographique dédié à la police Futura. Il nécessitait un 'Welcome Kit' qui devait contenir des informations sur les 21 conférenciers qui faisaient partie du festival. Une palette de couleurs réduite est choisie et on travaille avec différents éléments pour créer la marque graphique.",
-      "project4": "Fossil Fuel",
-      "project4Description": "Création d'un logo pour 'Fossil Fuel non-profileration treaty', qui comporte trois propositions graphiques.",
-      "project5": "Yvonne Aguirre Avocats",
+      "project3Description": "Création d'un festival typographique dédié à la typographie Futura. Il nécessitait un 'Welcome Kit' qui devait contenir des informations sur les 21 intervenants qui faisaient partie du festival. Une palette de couleurs réduite est choisie et différents éléments sont travaillés pour créer la marque graphique.",
+      "project4": "Réseaux Sociaux",
+      "project4Description": "Conception de contenu pour les réseaux sociaux et le marketing numérique.",
+      "project5": "Yvonne Aguirre Abogados",
       "project5Description": "Conception d'identité visuelle pour le cabinet d'avocats Yvonne Aguirre.",
-      "project6": "Design UX/UI",
+      "project6": "Illustration",
       "project6Description": "Illustration pour une couverture du single 'Flores pa tu pelo' de l'artiste Dellafuente ft. Pepe Vicio."
     },
     "others": {
@@ -69,7 +69,7 @@
     "contact": {
       "title": "Une idée pour votre projet",
       "description": "Vous voulez démarrer un nouveau projet ou simplement dire bonjour? Envoyez-moi un email et je ferai de mon mieux pour répondre dans les 24 heures!",
-      "button": "Envoyer un message",
+      "button": "Envoyer un email",
       "name": "Nom",
       "email": "Email",
       "message": "Message",

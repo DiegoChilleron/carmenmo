@@ -19,12 +19,22 @@ import festivalTipografico1 from '../../assets/photos/proyects/FestivalTipografi
 import festivalTipografico2 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-2.webp';
 import festivalTipografico3 from '../../assets/photos/proyects/FestivalTipografico/FestivalTipografico-3.webp';
 
-// Importar imágenes de Fossil Fuel
-import fossilFuelPortada from '../../assets/photos/proyects/Fossil-Fuel/FossilFuel-portada.webp';
-import fossilFuelLogo from '../../assets/photos/proyects/Fossil-Fuel/FossilFuel-logo.webp';
+// Importar imágenes de RRSS
+import rrssPortada from '../../assets/photos/proyects/RRSS/RRSS-portada.webp';
+import rrss1 from '../../assets/photos/proyects/RRSS/RRSS-1.webp';
+import rrss2 from '../../assets/photos/proyects/RRSS/RRSS-2.webp';
+import rrss3 from '../../assets/photos/proyects/RRSS/RRSS-3.webp';
+import rrss4 from '../../assets/photos/proyects/RRSS/RRSS-4.webp';
+import rrss5 from '../../assets/photos/proyects/RRSS/RRSS-5.webp';
+import rrss6 from '../../assets/photos/proyects/RRSS/RRSS-6.webp';
+import rrss7 from '../../assets/photos/proyects/RRSS/RRSS-7.webp';
+import rrss8 from '../../assets/photos/proyects/RRSS/RRSS-8.webp';
+import rrss9 from '../../assets/photos/proyects/RRSS/RRSS-9.webp';
+import rrss10 from '../../assets/photos/proyects/RRSS/RRSS-10.webp';
+import rrss12 from '../../assets/photos/proyects/RRSS/RRSS-12.webp';
 
-// Importar imagen de Diseños
-import disenosPortada from '../../assets/photos/proyects/Disenos/Disenos-portada.webp';
+// Importar imagen de Ilustración
+import ilustracionPortada from '../../assets/photos/proyects/Ilustracion/Ilustracion-portada.webp';
 
 // Importar imágenes de Yvonne Aguirre
 import yvonneAguirrePortada from '../../assets/photos/proyects/YvonneAguirre/YvonneAguirre-portada.webp';
@@ -149,9 +159,19 @@ export const Projects = () => {
       number: 4,
       name: t('projects.project4'),
       description: t('projects.project4Description'),
-      image: fossilFuelPortada,
+      image: rrssPortada,
       images: [
-        fossilFuelLogo
+        rrss1,
+        rrss2,
+        rrss3,
+        rrss4,
+        rrss5,
+        rrss6,
+        rrss7,
+        rrss8,
+        rrss9,
+        rrss10,
+        rrss12
       ]
     },
     {
@@ -173,7 +193,7 @@ export const Projects = () => {
       number: 6,
       name: t('projects.project6'),
       description: t('projects.project6Description'),
-      image: disenosPortada,
+      image: ilustracionPortada,
       images: []
     }
   ];

@@ -10,7 +10,7 @@ export const Hero = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const tools = ['Indesign', 'Premiere Pro', 'After Effects', 'Illustrator'];
+  const tools = ['Indesign', 'Premiere Pro', 'After Effects', 'Illustrator', 'Photoshop', 'Cinema4D', 'Blender', 'Figma', 'Keyshop'];
   
   // Duplicamos el array para crear un loop infinito sin cortes
   const duplicatedTools = [...tools, ...tools, ...tools,...tools, ...tools, ...tools];
@@ -38,7 +38,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       {/* Animated grid background */}
       <div className="hero__grid-background">
         {/* Líneas verticales */}
