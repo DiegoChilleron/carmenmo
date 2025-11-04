@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { useState, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { ProjectModal } from './ProjectModal';
 
 // Importar imágenes de Cienfuegos
@@ -69,19 +69,12 @@ interface ProjectCardProps {
   index: number;
 }
 
-const ProjectCard = ({ number, name, image, onClick, index }: ProjectCardProps) => {
-  const cardRef = useRef(null);
-  const isInView = useInView(cardRef, { once: true, margin: "-100px" });
-
+const ProjectCard = ({ number, name, image, onClick }: ProjectCardProps) => {
   return (
     <motion.div 
-      ref={cardRef}
-      className="projects__card" 
+      className="projects__card autoShow" 
       onClick={onClick} 
       style={{ cursor: 'pointer' }}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.6, delay: index * 0.15, ease: "linear" }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
     >
       <div className="projects__card-image-wrapper">
@@ -105,8 +98,6 @@ const ProjectCard = ({ number, name, image, onClick, index }: ProjectCardProps) 
 export const Projects = () => {
   const { t } = useTranslation();
   const [selectedProject, setSelectedProject] = useState<{ name: string; images: string[]; description?: string } | null>(null);
-  const titleRef = useRef(null);
-  const titleInView = useInView(titleRef, { once: true, margin: "-100px" });
 
   const projects = [
     {
@@ -211,15 +202,9 @@ export const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="projects__container">
-        <motion.h2 
-          ref={titleRef}
-          className="projects__title"
-          initial={{ opacity: 0, y: 30 }}
-          animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, ease: "linear" }}
-        >
+        <h2 className="projects__title autoShow">
           {t('projects.title')}
-        </motion.h2>
+        </h2>
         <div className="projects__grid">
           {projects.map((project, index) => (
             <ProjectCard

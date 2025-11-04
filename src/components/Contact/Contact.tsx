@@ -1,11 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 export const Contact = () => {
   const { t } = useTranslation();
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
   const handleSendMessage = () => {
     window.location.href = 'mailto:info@carmenmo.com';
@@ -29,41 +26,22 @@ export const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="contact__content">
-        <motion.div 
-          ref={containerRef}
-          className="contact__container"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-          transition={{ duration: 0.8, ease: "linear" }}
-        >
-          <motion.h2 
-            className="contact__title"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "linear" }}
-          >
+        <div className="contact__container autoShow">
+          <h2 className="contact__title">
             {t('contact.title')}
-          </motion.h2>
-          <motion.p 
-            className="contact__description"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "linear" }}
-          >
+          </h2>
+          <p className="contact__description">
             {t('contact.description')}
-          </motion.p>
+          </p>
           <motion.button 
             onClick={handleSendMessage} 
             className="contact__button button-gradient"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 0.6, ease: "linear" }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             {t('contact.button')}
           </motion.button>
-        </motion.div>
+        </div>
 
         {/* Animated lines background */}
         <div className="contact__animation">

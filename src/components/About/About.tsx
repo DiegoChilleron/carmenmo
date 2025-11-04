@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
 import starIcon from '../../assets/icons/start_icon.svg';
 
 interface ExperienceCardProps {
@@ -12,35 +10,19 @@ interface ExperienceCardProps {
   index: number;
 }
 
-const ExperienceCard = ({ position, company, date, description, index }: ExperienceCardProps) => {
-  const cardRef = useRef(null);
-  const isInView = useInView(cardRef, { once: true, margin: "-100px" });
-
+const ExperienceCard = ({ position, company, date, description }: ExperienceCardProps) => {
   return (
-    <motion.div 
-      ref={cardRef}
-      className="about__card"
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.6, delay: index * 0.2, ease: "linear" }}
-    >
+    <div className="about__card autoShow">
       <h3 className="about__card-position">{position}</h3>
       <p className="about__card-company">{company}</p>
       <p className="about__card-date">{date}</p>
       <p className="about__card-description">{description}</p>
-    </motion.div>
+    </div>
   );
 };
 
 export const About = () => {
   const { t } = useTranslation();
-  const titleRef = useRef(null);
-  const infoRef = useRef(null);
-  const experienceRef = useRef(null);
-  
-  const titleInView = useInView(titleRef, { once: true, margin: "-100px" });
-  const infoInView = useInView(infoRef, { once: true, margin: "-100px" });
-  const experienceInView = useInView(experienceRef, { once: true, margin: "-100px" });
 
   const experiences = [
     {
@@ -75,25 +57,13 @@ export const About = () => {
   return (
     <section id="about" className="about">
       <div className="about__container">
-        <motion.h2 
-          ref={titleRef}
-          className="about__title"
-          initial={{ opacity: 0, y: 30 }}
-          animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, ease: "linear" }}
-        >
+        <h2 className="about__title autoShow">
           {t('about.title')}
-        </motion.h2>
+        </h2>
 
         {/* Información General */}
-        <motion.div 
-          ref={infoRef}
-          className="about__section about__section--info"
-          initial={{ opacity: 0, y: 40 }}
-          animate={infoInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "linear" }}
-        >
-          <img src={starIcon} alt="star" className="about__section-icon" />
+        <div className="about__section about__section--info autoShow">
+          <img src={starIcon} alt="star" className="about__section-icon autoRotate" />
           <h3 className="about__section-title">{t('about.infoTitle')}</h3>
           <p className="about__info-text">
             {t('about.infoText.part1')}
@@ -112,16 +82,10 @@ export const About = () => {
           >
             {t('about.cvButton')}
           </motion.button>
-        </motion.div>
+        </div>
         
         {/* Experiencia */}
-        <motion.div 
-          ref={experienceRef}
-          className="about__section about__section--experience"
-          initial={{ opacity: 0, y: 40 }}
-          animate={experienceInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "linear" }}
-        >
+        <div className="about__section about__section--experience autoShow">
           <img src={starIcon} alt="star" className="about__section-icon" />
           <h3 className="about__section-title">{t('about.experienceTitle')}</h3>
           <div className="about__cards">
@@ -136,7 +100,7 @@ export const About = () => {
               />
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

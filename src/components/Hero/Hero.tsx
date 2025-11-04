@@ -21,21 +21,8 @@ export const Hero = () => {
   // Líneas horizontales - posiciones en porcentaje
   const horizontalLines = [15, 35, 55, 75];
 
-  // Variantes de animación para los elementos de texto
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0 }
-  };
-
-  const fadeIn = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 }
-  };
-
-  const scaleIn = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 }
-  };
+  // Variantes de animación para scroll infinito de herramientas
+  // (mantenemos solo las animaciones que NO son de opacidad al aparecer)
 
   return (
     <section id="home" className="hero">
@@ -85,42 +72,22 @@ export const Hero = () => {
       </div>
 
       <div className="hero__container">
-        <motion.img 
+        <img 
           src={logoHero} 
           alt="Carmen Moreno Logo" 
-          className="hero__logo"
+          className="hero__logo autoShow"
           width="300"
           height="300"
-          variants={scaleIn}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.8, ease: "linear" }}
         />
-        <motion.h1 
-          className="hero__title"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.8, delay: 0.2, ease: "linear" }}
-        >
+        <h1 className="hero__title autoShow">
           {t('hero.title')}
-        </motion.h1>
-        <motion.p 
-          className="hero__description"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.8, delay: 0.4, ease: "linear" }}
-        >
+        </h1>
+        <p className="hero__description autoShow">
           {t('hero.description')} <span className="hero__description--italic">{t('hero.motto')}</span>
-        </motion.p>
+        </p>
         <motion.button 
           onClick={handleLearnMore} 
-          className="hero__button button-gradient"
-          variants={fadeIn}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.6, delay: 0.6, ease: "linear" }}
+          className="hero__button button-gradient autoShow"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
