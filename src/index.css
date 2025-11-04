@@ -21,10 +21,12 @@
 html {
     @apply text-gray-900 bg-lightprimary dark:text-white dark:bg-darkprimary font-normal;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 * {
@@ -124,6 +126,53 @@ section {
     }
 }
 
+/* Animación para elementos que aparecen al cargar (sin scroll) */
+.fadeInOnLoad {
+    animation: FadeInOnLoadAnimation 0.8s ease-out forwards;
+}
+
+@keyframes FadeInOnLoadAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Variantes con delays para secuencias */
+.fadeInOnLoad--delay-1 {
+    animation: FadeInOnLoadAnimation 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.fadeInOnLoad--delay-2 {
+    animation: FadeInOnLoadAnimation 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.fadeInOnLoad--delay-3 {
+    animation: FadeInOnLoadAnimation 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+}
+
+.scaleInOnLoad {
+    animation: ScaleInOnLoadAnimation 0.8s ease-out forwards;
+}
+
+@keyframes ScaleInOnLoadAnimation {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .autoSlideLeft {
     animation: AutoSlideLeftAnimation both;
     animation-timeline: view();
@@ -133,11 +182,25 @@ section {
 @keyframes AutoSlideLeftAnimation {
     from {
         opacity: 0;
-        transform: translateX(-200px);
+        transform: translateX(-100px);
     }
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+/* Versión móvil con menor desplazamiento */
+@media (max-width: 768px) {
+    @keyframes AutoSlideLeftAnimation {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
 
@@ -150,11 +213,25 @@ section {
 @keyframes AutoSlideRightAnimation {
     from {
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(100px);
     }
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+/* Versión móvil con menor desplazamiento */
+@media (max-width: 768px) {
+    @keyframes AutoSlideRightAnimation {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
 

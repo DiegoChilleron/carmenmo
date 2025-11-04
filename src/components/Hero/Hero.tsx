@@ -10,7 +10,7 @@ export const Hero = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const tools = ['Indesign', 'Premiere Pro', 'After Effects', 'Illustrator', 'Photoshop', 'Cinema4D', 'Blender', 'Figma', 'Keyshop'];
+  const tools = ['Indesign', 'Premiere Pro', 'After Effects', 'Illustrator', 'Photoshop', 'Cinema4D', 'Blender', 'Figma', 'Keyshot'];
   
   // Duplicamos el array para crear un loop infinito sin cortes
   const duplicatedTools = [...tools, ...tools, ...tools,...tools, ...tools, ...tools];
@@ -75,19 +75,19 @@ export const Hero = () => {
         <img 
           src={logoHero} 
           alt="Carmen Moreno Logo" 
-          className="hero__logo autoShow"
+          className="hero__logo scaleInOnLoad"
           width="300"
           height="300"
         />
-        <h1 className="hero__title autoShow">
+        <h1 className="hero__title fadeInOnLoad fadeInOnLoad--delay-1">
           {t('hero.title')}
         </h1>
-        <p className="hero__description autoShow">
+        <p className="hero__description fadeInOnLoad fadeInOnLoad--delay-2">
           {t('hero.description')} <span className="hero__description--italic">{t('hero.motto')}</span>
         </p>
         <motion.button 
           onClick={handleLearnMore} 
-          className="hero__button button-gradient autoShow"
+          className="hero__button button-gradient fadeInOnLoad fadeInOnLoad--delay-3"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
