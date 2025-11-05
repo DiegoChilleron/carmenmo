@@ -42,92 +42,98 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Carmen Moreno",
-    "jobTitle": "Diseñadora Gráfica y Directora de Arte",
-    "description": "Diseñadora gráfica nacida en Logroño. Apasionada por el branding y el diseño editorial. Con máster en dirección de Arte y en Inteligencia artificial aplicada al Diseño.",
-    "url": "https://carmenmo.com",
-    "email": "info@carmenmo.com",
-    "image": "https://carmenmo.com/assets/icons/metatags.jpg",
-    "sameAs": [
-      "https://www.linkedin.com/in/carmen-moreno-61952023a/"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Logroño",
-      "addressCountry": "ES"
-    },
-    "alumniOf": [
+    "@graph": [
       {
-        "@type": "EducationalOrganization",
-        "name": "Máster en Dirección de Arte"
+        "@type": "Person",
+        "@id": "https://carmenmo.com/#person",
+        "name": "Carmen Moreno",
+        "jobTitle": "CEO y Diseñadora Gráfica",
+        "description": "Diseñadora gráfica nacida en Logroño. CEO y fundadora de yuGraphik. Apasionada por el branding y el diseño editorial. Con máster en dirección de Arte y en Inteligencia artificial aplicada al Diseño.",
+        "url": "https://carmenmo.com",
+        "email": "info@carmenmo.com",
+        "image": "https://carmenmo.com/assets/icons/metatags.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/carmen-moreno-61952023a/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Logroño",
+          "addressCountry": "ES"
+        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Máster en Dirección de Arte"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Máster en Inteligencia Artificial aplicada al Diseño"
+          }
+        ],
+        "knowsAbout": [
+          "Diseño Gráfico",
+          "Dirección de Arte",
+          "Branding",
+          "Diseño Editorial",
+          "Inteligencia Artificial",
+          "UX/UI Design",
+          "Diseño para Redes Sociales",
+          "Identidad Visual",
+          "Marketing Visual"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "CEO y Diseñadora Gráfica",
+          "occupationLocation": {
+            "@type": "City",
+            "name": "Logroño"
+          },
+          "skills": "Diseño Gráfico, Dirección de Arte, Branding, Diseño Editorial, Inteligencia Artificial, UX/UI"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "NeuronUP SL"
+        },
+        "founder": [
+          {
+            "@type": "Organization",
+            "name": "yuGraphik",
+            "url": "https://yugraphik.com",
+            "description": "Agencia de diseño y desarrollo de páginas web"
+          }
+        ]
       },
       {
-        "@type": "EducationalOrganization",
-        "name": "Máster en Inteligencia Artificial aplicada al Diseño"
+        "@type": "WebSite",
+        "@id": "https://carmenmo.com/#website",
+        "name": "Carmen Moreno - Portfolio",
+        "url": "https://carmenmo.com",
+        "description": "Portfolio profesional de Carmen Moreno, diseñadora gráfica especializada en branding, diseño editorial y dirección de arte.",
+        "author": {
+          "@id": "https://carmenmo.com/#person"
+        },
+        "inLanguage": ["es", "en", "ca", "it", "pt", "fr", "de", "ru", "zh"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://carmenmo.com/#service",
+        "name": "Carmen Moreno - Servicios de Diseño Gráfico",
+        "description": "Servicios profesionales de diseño gráfico, branding, diseño editorial y dirección de arte.",
+        "url": "https://carmenmo.com",
+        "priceRange": "$",
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": [
+          "Diseño Gráfico",
+          "Dirección de Arte",
+          "Branding",
+          "Diseño Editorial",
+          "Diseño UX/UI",
+          "Diseño para Redes Sociales"
+        ]
       }
-    ],
-    "knowsAbout": [
-      "Diseño Gráfico",
-      "Dirección de Arte",
-      "Branding",
-      "Diseño Editorial",
-      "Inteligencia Artificial",
-      "UX/UI Design",
-      "Diseño para Redes Sociales",
-      "Identidad Visual",
-      "Marketing Visual"
-    ],
-    "hasOccupation": {
-      "@type": "Occupation",
-      "name": "Diseñadora Gráfica",
-      "occupationLocation": {
-        "@type": "City",
-        "name": "Logroño"
-      },
-      "skills": "Diseño Gráfico, Dirección de Arte, Branding, Diseño Editorial, Inteligencia Artificial, UX/UI"
-    },
-    "worksFor": {
-      "@type": "Organization",
-      "name": "NeuronUP SL"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Carmen Moreno - Portfolio",
-    "url": "https://carmenmo.com",
-    "description": "Portfolio profesional de Carmen Moreno, diseñadora gráfica especializada en branding, diseño editorial y dirección de arte.",
-    "author": {
-      "@type": "Person",
-      "name": "Carmen Moreno"
-    },
-    "inLanguage": ["es", "en", "ca", "it", "pt", "fr", "de", "ru", "zh"]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Carmen Moreno - Servicios de Diseño Gráfico",
-    "description": "Servicios profesionales de diseño gráfico, branding, diseño editorial y dirección de arte.",
-    "url": "https://carmenmo.com",
-    "priceRange": "$$",
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "serviceType": [
-      "Diseño Gráfico",
-      "Dirección de Arte",
-      "Branding",
-      "Diseño Editorial",
-      "Diseño UX/UI",
-      "Diseño para Redes Sociales"
     ]
   }
   </script>

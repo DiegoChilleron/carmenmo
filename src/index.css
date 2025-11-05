@@ -18,18 +18,8 @@
 }
 
 
-html {
-    @apply text-gray-900 bg-lightprimary dark:text-white dark:bg-darkprimary font-normal;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-}
-
-* {
+    @apply text-gray-900 bg-lightprimary dark:text-white dark:bg-darkprimary font-normal overflow-x-clip;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -305,7 +295,7 @@ section {
 
 /* Navbar Mobile Menu */
 .navbar__mobile-menu {
-    @apply md:hidden;
+    @apply md:hidden h-dvh content-center;
 }
 
 .navbar__mobile-menu--open {
@@ -609,15 +599,17 @@ section {
 
 /* Others Section */
 .others {
-  @apply py-24 px-4 bg-lightprimary dark:bg-darkprimary;
+  @apply py-24 px-4 bg-lightprimary dark:bg-darkprimary overflow-x-clip;
 }
 
 .others__container {
-  @apply max-w-7xl mx-auto;
+  @apply max-w-7xl mx-auto ;
 }
 
 .others__cards {
   @apply flex flex-col md:flex-row gap-16 mt-12;
+  /* Permite que los elementos animados se salgan sin crear scroll */
+  overflow: visible;
 }
 
 .others__card {
@@ -789,8 +781,8 @@ section {
 }
 
 .glass {
-    backdrop-filter: saturate(180%) blur(10px);
-    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     background: rgba(15, 17, 17, 0.6);
     border: 1px solid rgba(126, 136, 248, 0.2);
 }
@@ -871,7 +863,7 @@ section {
 
 /* Legacy nav styles - can be removed if not used elsewhere */
 nav {
-    @apply fixed top-0 left-0 w-full z-100 bg-gray-800/60 py-5 md:py-6 px-20 backdrop-blur-md;
+    @apply fixed top-0 left-0 w-full z-100 md:bg-gray-800/60 py-5 md:py-6 px-20 md:backdrop-blur-md bg-gray-900 ;
 }
 
 nav a {
