@@ -45,7 +45,7 @@ export const Footer = () => {
             <a 
               href="https://www.linkedin.com/in/carmen-moreno-61952023a/" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="footer__social-link"
               aria-label="LinkedIn"
             >
@@ -54,9 +54,9 @@ export const Footer = () => {
               </svg>
             </a>
             <a 
-              href="https://www.instagram.com" 
+              href="https://www.instagram.com/carmenmo_design/" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="footer__social-link"
               aria-label="Instagram"
             >

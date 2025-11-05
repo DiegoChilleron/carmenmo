@@ -47,7 +47,7 @@ export const About = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/assets/icons/pdf/Carmen_Moreno_CV.pdf';
+    link.href = '/assets/pdf/Carmen_Moreno_CV.pdf';
     link.download = 'Carmen_Moreno_CV.pdf';
     document.body.appendChild(link);
     link.click();
