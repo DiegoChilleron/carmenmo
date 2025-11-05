@@ -116,7 +116,6 @@ section {
     }
 }
 
-/* Animación para elementos que aparecen al cargar (sin scroll) */
 .fadeInOnLoad {
     animation: FadeInOnLoadAnimation 0.8s ease-out forwards;
 }
@@ -132,7 +131,6 @@ section {
     }
 }
 
-/* Variantes con delays para secuencias */
 .fadeInOnLoad--delay-1 {
     animation: FadeInOnLoadAnimation 0.8s ease-out 0.2s forwards;
     opacity: 0;
@@ -180,7 +178,6 @@ section {
     }
 }
 
-/* Versión móvil con menor desplazamiento */
 @media (max-width: 768px) {
     @keyframes AutoSlideLeftAnimation {
         from {
@@ -211,7 +208,6 @@ section {
     }
 }
 
-/* Versión móvil con menor desplazamiento */
 @media (max-width: 768px) {
     @keyframes AutoSlideRightAnimation {
         from {
@@ -225,7 +221,6 @@ section {
     }
 }
 
-/* Header */
 
 /* Navbar */
 .navbar {
@@ -240,7 +235,6 @@ section {
   @apply flex items-center justify-between h-14;
 }
 
-/* Navbar Logo */
 .navbar__logo {
     @apply flex-shrink-0;
 }
@@ -249,7 +243,6 @@ section {
   @apply h-14 w-auto;
 }
 
-/* Navbar Menu */
 .navbar__menu {
   @apply hidden md:flex items-center rounded-full h-14 px-10 gap-10 bg-[#0F1111] border-2 border-transparent;
     background-image: 
@@ -271,7 +264,6 @@ section {
   @apply text-white hover:text-lighttertiary dark:hover:text-darktertiary transition-colors duration-200 font-medium;
 }
 
-/* Navbar Contact Button */
 .navbar__contact {
     @apply hidden md:block;
 }
@@ -280,7 +272,6 @@ section {
     @apply px-6 py-2;
 }
 
-/* Navbar Mobile Toggle */
 .navbar__mobile-toggle {
     @apply md:hidden;
 }
@@ -293,7 +284,6 @@ section {
     @apply w-6 h-6;
 }
 
-/* Navbar Mobile Menu */
 .navbar__mobile-menu {
     @apply md:hidden h-dvh content-center;
 }
@@ -332,12 +322,9 @@ section {
 
 /* Hero Section */
 .hero {
-    @apply min-h-screen flex items-center justify-center px-4 pt-16 pb-16;
-    position: relative;
-    overflow: hidden;
+    @apply min-h-screen flex px-4 pt-16 pb-16 overflow-hidden relative;
 }
 
-/* Hero Background Grid */
 .hero__background-grid {
     @apply absolute top-0 left-0 w-full h-full grid grid-cols-5 grid-rows-4 gap-8 p-8 z-0 pointer-events-none;
 }
@@ -351,7 +338,6 @@ section {
     );
 }
 
-/* Nueva cuadrícula animada minimalista */
 .hero__grid-background {
     @apply absolute inset-0 overflow-hidden;
     z-index: 0;
@@ -376,13 +362,9 @@ section {
     @apply h-px w-full;
     transform-origin: left;
 }
-
+  
 .hero__container {
-    @apply max-w-4xl mx-auto text-center relative z-10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @apply z-10 max-w-4xl mx-auto text-center relative content-center pt-20;
 }
 
 .hero__logo {
@@ -405,7 +387,6 @@ section {
     @apply scale-105;
 }
 
-/* Hero Tools Slider */
 .hero__tools-slider {
   @apply overflow-hidden backdrop-blur-sm py-4;
   margin-top: 10rem;
@@ -511,7 +492,7 @@ section {
   @apply text-sm font-normal leading-[1.6] text-[#CCC];
 }
 
-/* Projects Section */
+/* Projects */
 .projects {
   @apply min-h-screen py-16 px-4 bg-lightprimary dark:bg-darkprimary;
 }
@@ -608,7 +589,6 @@ section {
 
 .others__cards {
   @apply flex flex-col md:flex-row gap-16 mt-12;
-  /* Permite que los elementos animados se salgan sin crear scroll */
   overflow: visible;
 }
 
@@ -617,7 +597,6 @@ section {
   border: 2px solid transparent;
 }
 
-/* Light mode gradient */
 .others__card {
   background-image: 
     linear-gradient(#111b3a, #111b3a),
@@ -631,7 +610,6 @@ section {
   background-clip: padding-box, border-box;
 }
 
-/* Dark mode gradient */
 @media (prefers-color-scheme: dark) {
   .others__card {
     background-image: 
@@ -682,15 +660,10 @@ section {
   @apply mb-8 text-lg font-normal leading-[1.6] text-[#CCC] text-left;
 }
 
-.contact__button {
-  /* Inherits styles from button-gradient class */
-}
-
 .contact__button:hover {
   @apply scale-105;
 }
 
-/* Contact Animation */
 .contact__animation {
   @apply flex-1 relative h-[600px] z-0;
 }
